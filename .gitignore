@@ -1,0 +1,23 @@
+# Xcode
+.build/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+# Release výstupy
+dist/
+*.dmg
+# Lokální pomocné soubory
+.sync/
+.trigger
+.run-after-build
+.stopwatcher
+.buildlock/
+.clean
+build.log
+release.log
+watcher.command
+# macOS
+.DS_Store
+.git-xcode-old*/
