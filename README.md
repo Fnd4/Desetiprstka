@@ -2,6 +2,8 @@
 
 Česká aplikace pro Mac, která tě naučí psát všemi deseti. Nativní Swift + SwiftUI + SwiftData, bez backendu, data zůstávají v Macu.
 
+🌐 Web → [desetiprstka.cz](https://desetiprstka.cz) · 𝕏 → [@fandasobased](https://x.com/fandasobased)
+
 - Lekce od základní řady (F a J) po číslice a speciální znaky
 - Zkouška se známkou 1–5 jako ve škole (čisté úhozy za minutu, % chyb)
 - Test rychlosti v WPM, CPM i úhozech za minutu
