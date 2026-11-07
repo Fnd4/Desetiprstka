@@ -28,6 +28,9 @@ final class PracticeSession {
     // v3 – rytmus 0–1.
     var rhythm: Double?
 
+    /// Prázdný záznam – pro obnovu ze zálohy.
+    init() {}
+
     init(result: SessionResult) {
         self.date = result.finishedAt
         self.duration = result.duration

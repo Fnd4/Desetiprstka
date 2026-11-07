@@ -1,5 +1,7 @@
 import SwiftUI
 import SwiftData
+import AppKit
+import UniformTypeIdentifiers
 
 /// Okno Nastavení (⌘,) – Obecné, Vzhled, Zvuk.
 struct SettingsView: View {
@@ -27,6 +29,12 @@ private struct GeneralSettingsTab: View {
     @AppStorage(SettingsKey.showsHands) private var showsHands = true
     @AppStorage(SettingsKey.speedUnit) private var speedUnit: SpeedUnit = .wpm
     @State private var confirmsReset = false
+    @State private var backupDocument: BackupDocument?
+    @State private var showsExporter = false
+    @State private var showsImporter = false
+    @State private var pendingBackup: ProgressBackup?
+    @State private var confirmsRestore = false
+    @State private var backupMessage: BackupMessage?
 
     private var store: ProgressStore { ProgressStore(context: modelContext) }
     private var speed: SpeedSetting { progresses.first?.speedSetting ?? .default }
@@ -81,13 +89,19 @@ private struct GeneralSettingsTab: View {
             }
 
             Section {
+                LabeledContent("Záloha progresu") {
+                    HStack {
+                        Button("Zálohovat…") { exportBackup() }
+                        Button("Obnovit…") { showsImporter = true }
+                    }
+                }
                 Button("Smazat historii a statistiky…", role: .destructive) {
                     confirmsReset = true
                 }
             } header: {
                 Text("Data")
             } footer: {
-                Text("Vše se ukládá pouze lokálně v tomto Macu.")
+                Text("Vše se ukládá pouze lokálně v tomto Macu. Záloha je jeden soubor s celou historií, XP, rekordy, odznaky i nastavením. Ulož si ji třeba na iCloud Drive a obnovíš ji i na jiném Macu.")
                     .foregroundStyle(.secondary)
             }
         }
@@ -100,7 +114,71 @@ private struct GeneralSettingsTab: View {
         } message: {
             Text("Smaže se historie, statistiky kláves, XP, série, rekordy i odznaky a úroveň se vrátí na 1. Známá písmena a nastavení zůstanou. Akci nelze vrátit.")
         }
+        .fileExporter(
+            isPresented: $showsExporter,
+            document: backupDocument,
+            contentType: .json,
+            defaultFilename: BackupService.suggestedFileName()
+        ) { result in
+            switch result {
+            case .success(let url):
+                backupMessage = BackupMessage(title: "Záloha uložena", text: "Soubor \(url.lastPathComponent) obsahuje celý tvůj progres.")
+            case .failure(let error):
+                backupMessage = BackupMessage(title: "Zálohu se nepodařilo uložit", text: error.localizedDescription)
+            }
+        }
+        .fileImporter(isPresented: $showsImporter, allowedContentTypes: [.json]) { result in
+            loadBackup(result)
+        }
+        .confirmationDialog("Obnovit progres ze zálohy?", isPresented: $confirmsRestore, presenting: pendingBackup) { backup in
+            Button("Obnovit a restartovat", role: .destructive) { restore(backup) }
+        } message: { backup in
+            Text("\(backup.summary)\n\nAktuální progres se nahradí obsahem zálohy. Pro jistotu se nejdřív uloží do Application Support/Desetiprstka/Zálohy.")
+        }
+        .alert(item: $backupMessage) { message in
+            Alert(title: Text(message.title), message: Text(message.text))
+        }
         .task { store.playerProgress() }
+    }
+
+    private func exportBackup() {
+        do {
+            let backup = try BackupService.makeBackup(context: modelContext)
+            backupDocument = BackupDocument(data: try BackupService.encode(backup))
+            showsExporter = true
+        } catch {
+            backupMessage = BackupMessage(title: "Zálohu se nepodařilo vytvořit", text: error.localizedDescription)
+        }
+    }
+
+    private func loadBackup(_ result: Result<URL, Error>) {
+        do {
+            let url = try result.get()
+            let accessing = url.startAccessingSecurityScopedResource()
+            defer { if accessing { url.stopAccessingSecurityScopedResource() } }
+            pendingBackup = try BackupService.decode(try Data(contentsOf: url))
+            confirmsRestore = true
+        } catch {
+            backupMessage = BackupMessage(title: "Zálohu se nepodařilo načíst", text: error.localizedDescription)
+        }
+    }
+
+    private func restore(_ backup: ProgressBackup) {
+        do {
+            try BackupService.restore(backup, context: modelContext)
+            relaunch()
+        } catch {
+            backupMessage = BackupMessage(title: "Obnova se nepodařila", text: error.localizedDescription)
+        }
+    }
+
+    /// Restart, aby se nové nastavení i progres načetly všude čistě.
+    private func relaunch() {
+        let configuration = NSWorkspace.OpenConfiguration()
+        configuration.createsNewApplicationInstance = true
+        NSWorkspace.shared.openApplication(at: Bundle.main.bundleURL, configuration: configuration) { _, _ in
+            DispatchQueue.main.async { NSApp.terminate(nil) }
+        }
     }
 
     private var speedModeBinding: Binding<SpeedDifficulty> {
@@ -732,4 +810,28 @@ private struct UnlockableRow: View {
         .opacity(lockedLevel != nil ? 0.6 : 1)
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
+}
+
+// MARK: - Záloha
+
+/// Soubor zálohy pro `fileExporter`.
+struct BackupDocument: FileDocument {
+    static var readableContentTypes: [UTType] { [.json] }
+    var data: Data
+
+    init(data: Data) { self.data = data }
+
+    init(configuration: ReadConfiguration) throws {
+        data = configuration.file.regularFileContents ?? Data()
+    }
+
+    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+        FileWrapper(regularFileWithContents: data)
+    }
+}
+
+private struct BackupMessage: Identifiable {
+    let id = UUID()
+    let title: String
+    let text: String
 }
