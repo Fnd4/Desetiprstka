@@ -9,7 +9,7 @@
 - Test rychlosti v WPM, CPM i úhozech za minutu
 - Vlastní text, rytmus a metronom, zvuky skutečných kláves, 7 témat
 - Hodnosti a odemykání vzhledu za XP
-- Záloha a obnova celého progresu do jednoho souboru (Nastavení → Obecné → Data)
+- Záloha a obnova celého progresu do šifrovaného souboru `.desetiprstka` (Nastavení → Obecné → Data)
 
 ## ⬇️ Stažení
 - Nejnovější `.dmg` → záložka **Releases** vpravo
@@ -27,6 +27,7 @@ Aplikace zatím není notarizovaná Applem, takže ji macOS napoprvé zablokuje.
 - Požadavky → Xcode 16 nebo novější (ne beta)
 - Otevři `Desetiprstka.xcodeproj` → schéma `Desetiprstka` → **Run** (⌘R)
 - `build.command` → Debug build z Terminálu, log v `build.log`
+- Zálohy progresu se šifrují klíčem z `Desetiprstka/Resources/backupkey.dat`. Ten v repu není, build bez něj použije vývojový klíč a jeho zálohy nejdou otevřít v oficiální appce.
 - `release.command` → Release build (arm64 + x86_64) a `dist/Desetiprstka-<verze>.dmg`, log v `release.log`
 
 ## 🧱 Architektura

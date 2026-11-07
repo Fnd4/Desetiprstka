@@ -21,3 +21,5 @@ watcher.command
 # macOS
 .DS_Store
 .git-xcode-old*/
+# Tajný klíč pro šifrování záloh – nikdy do gitu
+Desetiprstka/Resources/backupkey.dat

@@ -17,6 +17,10 @@ echo "== Identity =="
 security find-identity -v -p codesigning
 IDENT=$(security find-identity -v -p codesigning | grep "Developer ID Application" | head -1 | sed -E 's/.*"(.*)"/\1/')
 echo "DEVELOPER_ID=${IDENT:-none}"
+if [ ! -f Desetiprstka/Resources/backupkey.dat ]; then
+  echo "CHYBÍ Desetiprstka/Resources/backupkey.dat – bez něj by zálohy nešly obnovit v jiných verzích. Release zastaven."
+  echo "EXIT 1"; echo "DONE"; exit 0
+fi
 rm -rf .build/release dist; mkdir -p dist
 if [ -n "$IDENT" ]; then
   SIGN=(CODE_SIGN_STYLE=Manual "CODE_SIGN_IDENTITY=$IDENT" "OTHER_CODE_SIGN_FLAGS=--timestamp" ENABLE_HARDENED_RUNTIME=YES)

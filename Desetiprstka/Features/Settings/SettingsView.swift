@@ -117,7 +117,7 @@ private struct GeneralSettingsTab: View {
         .fileExporter(
             isPresented: $showsExporter,
             document: backupDocument,
-            contentType: .json,
+            contentType: BackupService.fileType,
             defaultFilename: BackupService.suggestedFileName()
         ) { result in
             switch result {
@@ -127,7 +127,7 @@ private struct GeneralSettingsTab: View {
                 backupMessage = BackupMessage(title: "Zálohu se nepodařilo uložit", text: error.localizedDescription)
             }
         }
-        .fileImporter(isPresented: $showsImporter, allowedContentTypes: [.json]) { result in
+        .fileImporter(isPresented: $showsImporter, allowedContentTypes: [BackupService.fileType]) { result in
             loadBackup(result)
         }
         .confirmationDialog("Obnovit progres ze zálohy?", isPresented: $confirmsRestore, presenting: pendingBackup) { backup in
@@ -816,7 +816,7 @@ private struct UnlockableRow: View {
 
 /// Soubor zálohy pro `fileExporter`.
 struct BackupDocument: FileDocument {
-    static var readableContentTypes: [UTType] { [.json] }
+    static var readableContentTypes: [UTType] { [BackupService.fileType] }
     var data: Data
 
     init(data: Data) { self.data = data }

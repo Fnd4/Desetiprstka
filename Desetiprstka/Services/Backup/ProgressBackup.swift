@@ -1,8 +1,12 @@
 import Foundation
 import SwiftData
+import CryptoKit
+import UniformTypeIdentifiers
 
-/// Záloha celého progresu do jednoho čitelného JSON souboru.
+/// Záloha celého progresu do jednoho souboru `.desetiprstka`.
 /// Obsahuje profil, historii, statistiky kláves, XP, rekordy, odznaky, denní výzvy a nastavení.
+/// Soubor je zkomprimovaný a zašifrovaný (AES-GCM) – nejde přečíst ani upravit,
+/// a jakákoli změna obsahu se při obnově pozná.
 struct ProgressBackup: Codable {
     static let formatID = "desetiprstka-backup"
     static let currentVersion = 1
@@ -146,12 +150,15 @@ struct ProgressBackup: Codable {
 
 enum BackupError: LocalizedError {
     case notABackup
+    case tampered
     case newerVersion(Int)
 
     var errorDescription: String? {
         switch self {
         case .notABackup:
             "Tenhle soubor není záloha Desetiprstky."
+        case .tampered:
+            "Záloha je poškozená nebo byla upravena, proto ji nejde obnovit."
         case .newerVersion(let v):
             "Záloha pochází z novější verze Desetiprstky (formát \(v)). Aktualizuj aplikaci a zkus to znovu."
         }
@@ -226,14 +233,36 @@ enum BackupService {
         return result
     }
 
+    /// Typ souboru zálohy (přípona .desetiprstka).
+    nonisolated static let fileType = UTType(filenameExtension: "desetiprstka", conformingTo: .data) ?? .data
+
+    /// Hlavička souboru – zároveň autentizovaná data šifry.
+    private static let magic = Data("DPZ1".utf8)
+
+    /// JSON → zlib → AES-GCM. Výsledek nejde číst ani upravit bez klíče.
     static func encode(_ backup: ProgressBackup) throws -> Data {
         let encoder = JSONEncoder()
-        encoder.outputFormatting = [.prettyPrinted, .sortedKeys, .withoutEscapingSlashes]
+        encoder.outputFormatting = [.sortedKeys]
         encoder.dateEncodingStrategy = .iso8601
-        return try encoder.encode(backup)
+        let json = try encoder.encode(backup)
+        let compressed = try (json as NSData).compressed(using: .zlib) as Data
+        let box = try AES.GCM.seal(compressed, using: BackupKey.key, authenticating: magic)
+        guard let combined = box.combined else { throw BackupError.notABackup }
+        return magic + combined
     }
 
-    static func decode(_ data: Data) throws -> ProgressBackup {
+    static func decode(_ sealed: Data) throws -> ProgressBackup {
+        guard sealed.count > magic.count + 28, sealed.prefix(magic.count) == magic else {
+            throw BackupError.notABackup
+        }
+        let data: Data
+        do {
+            let box = try AES.GCM.SealedBox(combined: sealed.dropFirst(magic.count))
+            let compressed = try AES.GCM.open(box, using: BackupKey.key, authenticating: magic)
+            data = try (compressed as NSData).decompressed(using: .zlib) as Data
+        } catch {
+            throw BackupError.tampered
+        }
         struct Header: Decodable { var format: String?; var version: Int? }
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
@@ -263,7 +292,7 @@ enum BackupService {
         let folder = base.appendingPathComponent("Desetiprstka/Zálohy", isDirectory: true)
         try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
         let stamp = ISO8601DateFormatter().string(from: Date()).replacingOccurrences(of: ":", with: "-")
-        let url = folder.appendingPathComponent("před obnovou \(stamp).json")
+        let url = folder.appendingPathComponent("před obnovou \(stamp).desetiprstka")
         try encode(try makeBackup(context: context)).write(to: url, options: .atomic)
         return url
     }
@@ -372,4 +401,17 @@ enum BackupService {
             context.delete(item)
         }
     }
+}
+
+/// Klíč pro šifrování záloh.
+/// Oficiální build má vlastní tajný klíč v `Resources/backupkey.dat` (není v gitu).
+/// Build ze zdrojáků bez něj použije vývojový klíč – jeho zálohy jsou s oficiální appkou nekompatibilní.
+enum BackupKey {
+    static let key: SymmetricKey = {
+        if let url = Bundle.main.url(forResource: "backupkey", withExtension: "dat"),
+           let data = try? Data(contentsOf: url), data.count == 32 {
+            return SymmetricKey(data: data)
+        }
+        return SymmetricKey(data: SHA256.hash(data: Data("desetiprstka-dev-backup-key".utf8)))
+    }()
 }
