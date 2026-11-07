@@ -5,7 +5,8 @@ mkdir .buildlock 2>/dev/null || exit 0
 trap 'rmdir .buildlock' EXIT
 LOG="build.log"
 echo "START $(date)" > "$LOG"
-XCODE_APP=$(mdfind "kMDItemCFBundleIdentifier == 'com.apple.dt.Xcode'" | head -1)
+# Stabilní Xcode má přednost před betou.
+XCODE_APP=$(mdfind "kMDItemCFBundleIdentifier == 'com.apple.dt.Xcode'" | grep -vi beta | head -1)
 for d in "$XCODE_APP" /Applications/Xcode-beta.app /Applications/Xcode.app; do
   if [ -n "$d" ] && [ -d "$d/Contents/Developer" ]; then export DEVELOPER_DIR="$d/Contents/Developer"; break; fi
 done
