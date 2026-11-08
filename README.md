@@ -9,6 +9,7 @@
 - Test rychlosti v WPM, CPM i úhozech za minutu
 - Vlastní text, rytmus a metronom, zvuky skutečných kláves, 7 témat
 - Hodnosti a odemykání vzhledu za XP
+- Angličtina: rozhraní podle jazyka macOS, cvičení v češtině nebo angličtině, klávesnice česká QWERTZ/QWERTY, US a UK
 - Záloha a obnova celého progresu do šifrovaného souboru `.desetiprstka` (Nastavení → Obecné → Data)
 
 ## ⬇️ Stažení
