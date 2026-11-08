@@ -12,21 +12,21 @@ enum SoundPack: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .silent: "Silent"
-        case .soft: "Soft"
-        case .mechanical: "Mechanical"
-        case .typewriter: "Typewriter"
-        case .clicky: "Clicky"
+        case .silent: String(localized: "Silent")
+        case .soft: String(localized: "Soft")
+        case .mechanical: String(localized: "Mechanical")
+        case .typewriter: String(localized: "Typewriter")
+        case .clicky: String(localized: "Clicky")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .silent: "Bez zvuku úhozů"
-        case .soft: "Tlumené, sotva slyšitelné ťuknutí"
-        case .mechanical: "Plný úhoz mechanické klávesnice"
-        case .typewriter: "Kovový úder psacího stroje"
-        case .clicky: "Ostré, krátké cvaknutí"
+        case .silent: String(localized: "Bez zvuku úhozů")
+        case .soft: String(localized: "Tlumené, sotva slyšitelné ťuknutí")
+        case .mechanical: String(localized: "Plný úhoz mechanické klávesnice")
+        case .typewriter: String(localized: "Kovový úder psacího stroje")
+        case .clicky: String(localized: "Ostré, krátké cvaknutí")
         }
     }
 
@@ -66,14 +66,14 @@ enum SoundEffect: Hashable, Sendable {
 
     var title: String {
         switch self {
-        case .key: "Úhoz"
-        case .error: "Chyba"
-        case .milestone: "Combo"
-        case .completion: "Dokončení"
-        case .record: "Rekord"
-        case .challenge: "Výzva"
-        case .achievement: "Odznak"
-        case .levelUp: "Level up"
+        case .key: String(localized: "Úhoz")
+        case .error: String(localized: "Chyba")
+        case .milestone: String(localized: "Combo")
+        case .completion: String(localized: "Dokončení")
+        case .record: String(localized: "Rekord")
+        case .challenge: String(localized: "Výzva")
+        case .achievement: String(localized: "Odznak")
+        case .levelUp: String(localized: "Level up")
         }
     }
 

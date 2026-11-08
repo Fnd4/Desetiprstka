@@ -53,7 +53,7 @@ struct AppCommands: Commands {
             .keyboardShortcut("n", modifiers: [.command, .shift])
         }
 
-        CommandMenu("Přejít") {
+        CommandMenu(String(localized: "Přejít")) {
             ForEach(SidebarItem.allCases) { item in
                 Button(item.title) {
                     appState.endPractice()

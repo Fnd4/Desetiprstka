@@ -11,19 +11,19 @@ enum ExerciseStage: Int, CaseIterable, Identifiable, Codable, Comparable, Sendab
 
     var title: String {
         switch self {
-        case .combinations: "Kombinace znaků"
-        case .shortWords: "Krátká slova"
-        case .longWords: "Dlouhá slova"
-        case .sentences: "Věty"
+        case .combinations: String(localized: "Kombinace znaků")
+        case .shortWords: String(localized: "Krátká slova")
+        case .longWords: String(localized: "Dlouhá slova")
+        case .sentences: String(localized: "Věty")
         }
     }
 
     var shortTitle: String {
         switch self {
-        case .combinations: "Znaky"
-        case .shortWords: "Krátká"
-        case .longWords: "Dlouhá"
-        case .sentences: "Věty"
+        case .combinations: String(localized: "Znaky")
+        case .shortWords: String(localized: "Krátká")
+        case .longWords: String(localized: "Dlouhá")
+        case .sentences: String(localized: "Věty")
         }
     }
 
@@ -76,7 +76,7 @@ struct Difficulty: Hashable, Codable, Sendable {
 
     var targetWPM: Double { stage.baseTargetWPM + Double(subLevel) * 2 }
 
-    var title: String { "Úroveň \(level)" }
+    var title: String { String(localized: "Úroveň \(level)") }
 
     var raised: Difficulty { Difficulty(level: level + 1) }
     var lowered: Difficulty { Difficulty(level: level - 1) }

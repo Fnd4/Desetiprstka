@@ -17,16 +17,16 @@ enum RecordKind: String, CaseIterable, Identifiable, Codable, Sendable {
 
     var title: String {
         switch self {
-        case .bestWPM: "Nejvyšší rychlost"
-        case .bestAccuracy: "Nejlepší přesnost"
-        case .longestCombo: "Nejdelší combo"
-        case .timeAttack15: "Time Attack 15 s"
-        case .timeAttack30: "Time Attack 30 s"
-        case .timeAttack60: "Time Attack 60 s"
-        case .timeAttack120: "Time Attack 120 s"
-        case .sprint: "Nejlepší Sprint"
-        case .survival: "Nejlepší Survival"
-        case .mostCharacters: "Nejvíc znaků v jednom cvičení"
+        case .bestWPM: String(localized: "Nejvyšší rychlost")
+        case .bestAccuracy: String(localized: "Nejlepší přesnost")
+        case .longestCombo: String(localized: "Nejdelší combo")
+        case .timeAttack15: String(localized: "Time Attack 15 s")
+        case .timeAttack30: String(localized: "Time Attack 30 s")
+        case .timeAttack60: String(localized: "Time Attack 60 s")
+        case .timeAttack120: String(localized: "Time Attack 120 s")
+        case .sprint: String(localized: "Nejlepší Sprint")
+        case .survival: String(localized: "Nejlepší Survival")
+        case .mostCharacters: String(localized: "Nejvíc znaků v jednom cvičení")
         }
     }
 
@@ -46,9 +46,9 @@ enum RecordKind: String, CaseIterable, Identifiable, Codable, Sendable {
         switch self {
         case .bestWPM, .sprint: SpeedUnit.current.label(value)
         case .bestAccuracy: Format.percent(value)
-        case .longestCombo: "\(Int(value)) znaků"
-        case .timeAttack15, .timeAttack30, .timeAttack60, .timeAttack120, .mostCharacters: "\(Int(value)) znaků"
-        case .survival: "\(Int(value)) bodů"
+        case .longestCombo: String(localized: "\(Int(value)) znaků")
+        case .timeAttack15, .timeAttack30, .timeAttack60, .timeAttack120, .mostCharacters: String(localized: "\(Int(value)) znaků")
+        case .survival: String(localized: "\(Int(value)) bodů")
         }
     }
 

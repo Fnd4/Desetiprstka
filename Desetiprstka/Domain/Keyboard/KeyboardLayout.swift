@@ -1,4 +1,5 @@
 import CoreGraphics
+import Foundation
 
 /// Podporovaná rozložení klávesnice.
 enum KeyboardLayoutKind: String, CaseIterable, Identifiable, Codable, Sendable {

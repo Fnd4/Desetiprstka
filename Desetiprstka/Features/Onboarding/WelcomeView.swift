@@ -17,17 +17,17 @@ struct WelcomeView: View {
 
         var title: String {
             switch self {
-            case .beginner: "Jsem úplný začátečník"
-            case .homeRow: "Znám základní řadu"
-            case .custom: "Vyberu si písmena sám"
+            case .beginner: String(localized: "Jsem úplný začátečník")
+            case .homeRow: String(localized: "Znám základní řadu")
+            case .custom: String(localized: "Vyberu si písmena sám")
             }
         }
 
         var subtitle: String {
             switch self {
-            case .beginner: "Začneme klávesami F, J, D a K. Ke každé ti ukážu správný prst."
-            case .homeRow: "Začneš s klávesami A S D F G H J K L."
-            case .custom: "Otevřu přehled písmen a označíš, co už umíš."
+            case .beginner: String(localized: "Začneme klávesami F, J, D a K. Ke každé ti ukážu správný prst.")
+            case .homeRow: String(localized: "Začneš s klávesami A S D F G H J K L.")
+            case .custom: String(localized: "Otevřu přehled písmen a označíš, co už umíš.")
             }
         }
 

@@ -19,15 +19,15 @@ extension GameMode {
     /// Kratší popis do karty.
     var cardSubtitle: String {
         switch self {
-        case .practice: "Klidné cvičení, které tě posouvá osnovou."
-        case .timeAttack: "Co nejvíc správných znaků za daný čas."
-        case .sprint: "Krátký text na jeden nádech. Na čas."
-        case .accuracyChallenge: "Přesnost před rychlostí. Žádné zbytečné chyby."
-        case .survival: "Každá chyba stojí život, vlny zrychlují."
-        case .endless: "Piš, dokud chceš. Bez cílové čáry."
-        case .exam: "Opis na čas se školním hodnocením: čisté úhozy, % chyb, známka."
-        case .customText: "Vlož vlastní text a opiš ho – článek, poznámky, úkol."
-        case .speedTest: "Klasický test na čas. Výsledek ve WPM, CPM i úhozech."
+        case .practice: String(localized: "Klidné cvičení, které tě posouvá osnovou.")
+        case .timeAttack: String(localized: "Co nejvíc správných znaků za daný čas.")
+        case .sprint: String(localized: "Krátký text na jeden nádech. Na čas.")
+        case .accuracyChallenge: String(localized: "Přesnost před rychlostí. Žádné zbytečné chyby.")
+        case .survival: String(localized: "Každá chyba stojí život, vlny zrychlují.")
+        case .endless: String(localized: "Piš, dokud chceš. Bez cílové čáry.")
+        case .exam: String(localized: "Opis na čas se školním hodnocením: čisté úhozy, % chyb, známka.")
+        case .customText: String(localized: "Vlož vlastní text a opiš ho – článek, poznámky, úkol.")
+        case .speedTest: String(localized: "Klasický test na čas. Výsledek ve WPM, CPM i úhozech.")
         }
     }
 }

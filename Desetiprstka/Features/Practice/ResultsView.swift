@@ -74,7 +74,7 @@ struct ResultsView: View {
                 HStack(spacing: 12) {
                     Button("Hotovo", action: onClose)
                         .keyboardShortcut(.cancelAction)
-                    Button(result.mode.usesContinuousText ? "Znovu" : "Zopakovat stejný text", action: onRetry)
+                    Button(result.mode.usesContinuousText ? String(localized: "Znovu") : String(localized: "Zopakovat stejný text"), action: onRetry)
                     Spacer()
                     Button(action: onNext) {
                         Text("Další cvičení")
@@ -132,38 +132,38 @@ struct ResultsView: View {
             return result.difficulty.stage.title + " · " + result.difficulty.title
         case .timeAttack:
             let kind = RecordKind.timeAttack(result.timeLimit ?? 0)
-            return "Time Attack \(result.timeLimit ?? 0) s · \(result.displayScore) správných znaků" + recordSuffix(kind)
+            return String(localized: "Time Attack \(result.timeLimit ?? 0) s · \(result.displayScore) správných znaků") + recordSuffix(kind)
         case .survival:
-            return "Survival · vlna \(result.wave ?? 1) · \(result.displayScore) bodů" + recordSuffix(.survival)
+            return String(localized: "Survival · vlna \(result.wave ?? 1) · \(result.displayScore) bodů") + recordSuffix(.survival)
         case .endless:
-            return "Endless · \(result.characters) znaků"
+            return String(localized: "Endless · \(result.characters) znaků")
         case .sprint, .accuracyChallenge:
             return result.mode.title
         case .exam:
-            return "Zkouška \((result.timeLimit ?? 600) / 60) min · \(Format.number(result.grossStrokes)) hrubých úhozů"
+            return String(localized: "Zkouška \((result.timeLimit ?? 600) / 60) min · \(Format.number(result.grossStrokes)) hrubých úhozů")
         case .customText:
-            return "Vlastní text · \(Format.number(result.characters)) znaků"
+            return String(localized: "Vlastní text · \(Format.number(result.characters)) znaků")
         case .speedTest:
-            return "Test rychlosti \(result.timeLimit ?? 30) s · \(Format.number(result.characters)) správných znaků"
+            return String(localized: "Test rychlosti \(result.timeLimit ?? 30) s · \(Format.number(result.characters)) správných znaků")
         }
     }
 
     /// „ · rekord 350 bodů“ – u režimů se skóre.
     private func recordSuffix(_ kind: RecordKind?) -> String {
         guard let kind, let value = outcome.recordValues[kind] else { return "" }
-        return " · rekord \(kind.format(value))"
+        return String(localized: " · rekord \(kind.format(value))")
     }
 
     private var headerTitle: String {
         if result.mode == .accuracyChallenge {
-            return result.completed ? "Výzva splněna" : "Výzva nesplněna"
+            return result.completed ? String(localized: "Výzva splněna") : String(localized: "Výzva nesplněna")
         }
-        if result.mode == .survival { return "Konec hry" }
+        if result.mode == .survival { return String(localized: "Konec hry") }
         if result.mode == .exam { return result.exam.grade.title }
         switch result.accuracy {
-        case 0.97...: return "Výborně!"
-        case 0.9..<0.97: return "Dobrá práce"
-        default: return "Zkus trochu zpomalit"
+        case 0.97...: return String(localized: "Výborně!")
+        case 0.9..<0.97: return String(localized: "Dobrá práce")
+        default: return String(localized: "Zkus trochu zpomalit")
         }
     }
 
@@ -198,21 +198,21 @@ struct ResultsView: View {
         var tiles: [Tile] = []
         switch result.mode {
         case .timeAttack, .survival:
-            tiles.append(Tile(title: result.mode == .survival ? "Skóre" : "Znaky", value: "\(result.displayScore)", symbol: "number"))
+            tiles.append(Tile(title: result.mode == .survival ? String(localized: "Skóre") : String(localized: "Znaky"), value: "\(result.displayScore)", symbol: "number"))
         case .sprint:
-            tiles.append(Tile(title: "Čas", value: Format.duration(result.duration), symbol: "stopwatch"))
+            tiles.append(Tile(title: String(localized: "Čas"), value: Format.duration(result.duration), symbol: "stopwatch"))
         default:
             break
         }
-        tiles.append(Tile(title: "Rychlost", value: speedUnit.label(result.wpm, strokesPerMinute: result.strokesPerMinute), symbol: "speedometer"))
-        tiles.append(Tile(title: "Přesnost", value: Format.percent(result.accuracy), symbol: "target", tint: accuracyColor))
-        tiles.append(Tile(title: "Chyby", value: "\(result.errors)", symbol: "xmark.circle",
+        tiles.append(Tile(title: String(localized: "Rychlost"), value: speedUnit.label(result.wpm, strokesPerMinute: result.strokesPerMinute), symbol: "speedometer"))
+        tiles.append(Tile(title: String(localized: "Přesnost"), value: Format.percent(result.accuracy), symbol: "target", tint: accuracyColor))
+        tiles.append(Tile(title: String(localized: "Chyby"), value: "\(result.errors)", symbol: "xmark.circle",
                           tint: result.errors > 0 ? .red : .primary))
         if result.mode != .exam {
-            tiles.append(Tile(title: "Max combo", value: "\(result.maxCombo)", symbol: "bolt"))
+            tiles.append(Tile(title: String(localized: "Max combo"), value: "\(result.maxCombo)", symbol: "bolt"))
         }
         if result.mode != .sprint, !result.mode.isTimed {
-            tiles.append(Tile(title: "Čas", value: Format.duration(result.duration), symbol: "timer"))
+            tiles.append(Tile(title: String(localized: "Čas"), value: Format.duration(result.duration), symbol: "timer"))
         }
         return tiles
     }
@@ -230,13 +230,13 @@ struct ResultsView: View {
 
     /// Výsledek ve všech světových jednotkách – dá se porovnat s Monkeytype, 10FastFingers i ZAV.
     private var speedTestCard: some View {
-        Card(title: "Tvoje rychlost ve všech jednotkách", systemImage: "globe") {
+        Card(title: String(localized: "Tvoje rychlost ve všech jednotkách"), systemImage: "globe") {
             VStack(alignment: .leading, spacing: 14) {
                 HStack(spacing: 16) {
                     unitTile(.wpm, value: result.wpm, highlighted: speedUnit == .wpm)
                     unitTile(.cpm, value: result.cpm, highlighted: speedUnit == .cpm)
                     unitTile(.strokes, value: result.strokesPerMinute, highlighted: speedUnit == .strokes)
-                    StatTile(title: "Raw WPM", value: Format.wpm(result.rawWPM), systemImage: "waveform.path", size: 28)
+                    StatTile(title: String(localized: "Raw WPM"), value: Format.wpm(result.rawWPM), systemImage: "waveform.path", size: 28)
                 }
                 Grid(alignment: .leading, horizontalSpacing: 12, verticalSpacing: 4) {
                     ForEach(SpeedUnit.allCases) { unit in
@@ -266,16 +266,16 @@ struct ResultsView: View {
 
     private var examCard: some View {
         let exam = result.exam
-        return Card(title: "Hodnocení opisu", systemImage: "graduationcap") {
+        return Card(title: String(localized: "Hodnocení opisu"), systemImage: "graduationcap") {
             VStack(alignment: .leading, spacing: 14) {
                 HStack(spacing: 16) {
-                    StatTile(title: "Čisté úhozy/min", value: Format.number(exam.netPerMinute.rounded()),
+                    StatTile(title: String(localized: "Čisté úhozy/min"), value: Format.number(exam.netPerMinute.rounded()),
                              systemImage: "checkmark.circle", tint: gradeColor(exam.grade), size: 28)
-                    StatTile(title: "Hrubé úhozy/min", value: Format.number(exam.grossPerMinute.rounded()),
+                    StatTile(title: String(localized: "Hrubé úhozy/min"), value: Format.number(exam.grossPerMinute.rounded()),
                              systemImage: "keyboard", size: 28)
-                    StatTile(title: "Chybovost", value: "\(Format.decimal(exam.errorPercent)) %",
+                    StatTile(title: String(localized: "Chybovost"), value: "\(Format.decimal(exam.errorPercent)) %",
                              systemImage: "percent", tint: exam.errorPercent > 0.5 ? .orange : .primary, size: 28)
-                    StatTile(title: "Známka", value: "\(exam.grade.rawValue)",
+                    StatTile(title: String(localized: "Známka"), value: "\(exam.grade.rawValue)",
                              systemImage: "rosette", tint: gradeColor(exam.grade), size: 28)
                 }
                 Text("\(Format.number(exam.grossStrokes)) hrubých úhozů − \(exam.errors) × \(ExamEvaluation.penaltyPerError) za chyby = \(Format.number(exam.netStrokes)) čistých úhozů")
@@ -298,13 +298,13 @@ struct ResultsView: View {
         let label: String
         let tint: Color
         switch rhythm {
-        case 0.75...: label = "Pravidelné tempo – přesně tak se píše všemi deseti."; tint = .green
-        case 0.6..<0.75: label = "Tempo občas kolísá. Zkus zapnout metronom (⇧⌘M) a psát do rytmu."; tint = theme.accent
-        default: label = "Tempo hodně kolísá – zpomal a drž stejné rozestupy mezi úhozy. Pomůže metronom (⇧⌘M)."; tint = .orange
+        case 0.75...: label = String(localized: "Pravidelné tempo – přesně tak se píše všemi deseti."); tint = .green
+        case 0.6..<0.75: label = String(localized: "Tempo občas kolísá. Zkus zapnout metronom (⇧⌘M) a psát do rytmu."); tint = theme.accent
+        default: label = String(localized: "Tempo hodně kolísá – zpomal a drž stejné rozestupy mezi úhozy. Pomůže metronom (⇧⌘M)."); tint = .orange
         }
         return Card {
             HStack(spacing: 16) {
-                StatTile(title: "Rytmus", value: Format.percent(rhythm), systemImage: "metronome", tint: tint, size: 28)
+                StatTile(title: String(localized: "Rytmus"), value: Format.percent(rhythm), systemImage: "metronome", tint: tint, size: 28)
                     .frame(width: 130, alignment: .leading)
                 Text(label)
                     .font(.callout)
@@ -416,8 +416,8 @@ struct ResultsView: View {
 
                 ProgressView(value: levelProgress ?? outcome.levelAfter.progress)
                 Text(outcome.levelAfter.isMax
-                     ? "Maximální level"
-                     : "\(Format.number(outcome.levelAfter.xpIntoLevel)) / \(Format.number(outcome.levelAfter.xpForNextLevel)) XP")
+                     ? String(localized: "Maximální level")
+                     : String(localized: "\(Format.number(outcome.levelAfter.xpIntoLevel)) / \(Format.number(outcome.levelAfter.xpForNextLevel)) XP"))
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .monospacedDigit()
@@ -507,7 +507,7 @@ struct ResultsView: View {
                     .font(.title)
                     .foregroundStyle(theme.accent)
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(recommendation.direction == .up ? "Zvýšit rychlostní obtížnost?" : "Snížit rychlostní obtížnost?")
+                    Text(recommendation.direction == .up ? String(localized: "Zvýšit rychlostní obtížnost?") : String(localized: "Snížit rychlostní obtížnost?"))
                         .font(.headline)
                     Text(recommendation.reason)
                         .foregroundStyle(.secondary)
@@ -529,7 +529,7 @@ struct ResultsView: View {
     }
 
     private var problemKeysCard: some View {
-        Card(title: "Kde chybuješ", systemImage: "exclamationmark.triangle") {
+        Card(title: String(localized: "Kde chybuješ"), systemImage: "exclamationmark.triangle") {
             VStack(alignment: .leading, spacing: 12) {
                 FlowLayout(spacing: 10) {
                     ForEach(result.problemKeys.prefix(8)) { item in

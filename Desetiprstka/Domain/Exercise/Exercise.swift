@@ -20,9 +20,9 @@ enum ExerciseLength: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .short: "Krátké"
-        case .medium: "Střední"
-        case .long: "Dlouhé"
+        case .short: String(localized: "Krátké")
+        case .medium: String(localized: "Střední")
+        case .long: String(localized: "Dlouhé")
         }
     }
 

@@ -21,16 +21,16 @@ enum PlayerRank: Int, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .novice: "Nováček"
-        case .apprentice: "Učeň"
-        case .scribe: "Písař"
-        case .skilled: "Zručný písař"
-        case .swift: "Rychlopísař"
-        case .virtuoso: "Virtuos"
-        case .master: "Mistr klávesnice"
-        case .legend: "Legenda"
-        case .grandmaster: "Velmistr"
-        case .tenFingers: "Desetiprstý"
+        case .novice: String(localized: "Nováček")
+        case .apprentice: String(localized: "Učeň")
+        case .scribe: String(localized: "Písař")
+        case .skilled: String(localized: "Zručný písař")
+        case .swift: String(localized: "Rychlopísař")
+        case .virtuoso: String(localized: "Virtuos")
+        case .master: String(localized: "Mistr klávesnice")
+        case .legend: String(localized: "Legenda")
+        case .grandmaster: String(localized: "Velmistr")
+        case .tenFingers: String(localized: "Desetiprstý")
         }
     }
 
@@ -69,10 +69,10 @@ enum CursorStyle: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .underline: "Podtržení"
-        case .highlight: "Zvýraznění"
-        case .block: "Blok"
-        case .dotted: "Tečkovaný"
+        case .underline: String(localized: "Podtržení")
+        case .highlight: String(localized: "Zvýraznění")
+        case .block: String(localized: "Blok")
+        case .dotted: String(localized: "Tečkovaný")
         }
     }
 
@@ -96,9 +96,9 @@ enum ComboEffect: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .classic: "Klasický"
-        case .sparks: "Jiskry"
-        case .flame: "Plamen"
+        case .classic: String(localized: "Klasický")
+        case .sparks: String(localized: "Jiskry")
+        case .flame: String(localized: "Plamen")
         }
     }
 
@@ -132,7 +132,7 @@ extension AppTheme: LevelUnlockable {
         case .midnight: 12
         }
     }
-    var unlockTitle: String { "Téma \(title)" }
+    var unlockTitle: String { String(localized: "Téma \(title)") }
 }
 
 extension AccentChoice: LevelUnlockable {
@@ -146,7 +146,7 @@ extension AccentChoice: LevelUnlockable {
         case .red: 10
         }
     }
-    var unlockTitle: String { "Barva \(title)" }
+    var unlockTitle: String { String(localized: "Barva \(title)") }
 }
 
 extension SoundPack: LevelUnlockable {
@@ -158,7 +158,7 @@ extension SoundPack: LevelUnlockable {
         case .clicky: 8
         }
     }
-    var unlockTitle: String { "Zvuky \(title)" }
+    var unlockTitle: String { String(localized: "Zvuky \(title)") }
 }
 
 extension CursorStyle: LevelUnlockable {
@@ -170,7 +170,7 @@ extension CursorStyle: LevelUnlockable {
         case .dotted: 15
         }
     }
-    var unlockTitle: String { "Kurzor \(title)" }
+    var unlockTitle: String { String(localized: "Kurzor \(title)") }
 }
 
 extension ComboEffect: LevelUnlockable {
@@ -181,7 +181,7 @@ extension ComboEffect: LevelUnlockable {
         case .flame: 20
         }
     }
-    var unlockTitle: String { "Combo efekt \(title)" }
+    var unlockTitle: String { String(localized: "Combo efekt \(title)") }
 }
 
 /// Přehled všeho odemykatelného.

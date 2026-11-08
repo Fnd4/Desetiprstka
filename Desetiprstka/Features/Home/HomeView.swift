@@ -185,13 +185,13 @@ struct HomeView: View {
         return Card {
             VStack(alignment: .leading, spacing: 16) {
                 HStack(spacing: 16) {
-                    StatTile(title: "Psaní", value: profile.difficulty.title,
+                    StatTile(title: String(localized: "Psaní"), value: profile.difficulty.title,
                              systemImage: profile.difficulty.stage.symbol, size: 20)
-                    StatTile(title: "Rychlost", value: speed.label,
+                    StatTile(title: String(localized: "Rychlost"), value: speed.label,
                              systemImage: speed.mode.symbol, size: 20)
-                    StatTile(title: "Rekord", value: bestWPM.map { speedUnit.label($0) } ?? "—",
+                    StatTile(title: String(localized: "Rekord"), value: bestWPM.map { speedUnit.label($0) } ?? "—",
                              systemImage: "trophy", size: 20)
-                    StatTile(title: "Série", value: streak > 0 ? "\(streak) day streak" : "—",
+                    StatTile(title: String(localized: "Série"), value: streak > 0 ? String(localized: "\(streak) day streak") : "—",
                              systemImage: "flame", tint: streak > 0 ? .orange : .primary, size: 20)
                 }
 
@@ -205,8 +205,8 @@ struct HomeView: View {
                         .fixedSize()
                     ProgressView(value: level.progress)
                     Text(level.isMax
-                         ? "Max"
-                         : "\(Format.number(level.xpIntoLevel)) / \(Format.number(level.xpForNextLevel)) XP")
+                         ? String(localized: "Max")
+                         : String(localized: "\(Format.number(level.xpIntoLevel)) / \(Format.number(level.xpForNextLevel)) XP"))
                         .font(.callout)
                         .foregroundStyle(.secondary)
                         .monospacedDigit()
@@ -218,7 +218,7 @@ struct HomeView: View {
     // MARK: - Výzva a doporučení
 
     private var dailyChallengeCard: some View {
-        Card(title: "Výzva dne", systemImage: "star.circle") {
+        Card(title: String(localized: "Výzva dne"), systemImage: "star.circle") {
             if let record = todaysChallenge, let challenge = record.challenge {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(alignment: .top, spacing: 10) {
@@ -241,7 +241,7 @@ struct HomeView: View {
                         Text(challenge.formattedProgress(record.progress))
                             .monospacedDigit()
                         Spacer()
-                        Text(record.isCompleted ? "Splněno" : "+\(challenge.reward) XP")
+                        Text(record.isCompleted ? String(localized: "Splněno") : String(localized: "+\(challenge.reward) XP"))
                     }
                     .font(.caption)
                     .foregroundStyle(.secondary)
@@ -254,7 +254,7 @@ struct HomeView: View {
     }
 
     private var nextStepCard: some View {
-        Card(title: "Doporučený další krok", systemImage: "arrow.forward.circle") {
+        Card(title: String(localized: "Doporučený další krok"), systemImage: "arrow.forward.circle") {
             if let step = nextStep {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(alignment: .top, spacing: 10) {
@@ -292,7 +292,7 @@ struct HomeView: View {
         let learned = known.intersection(Curriculum.allKeySet).count
         let next = Curriculum.nextKey(after: known)
 
-        return Card(title: "Tvůj pokrok", systemImage: "chart.bar.fill") {
+        return Card(title: String(localized: "Tvůj pokrok"), systemImage: "chart.bar.fill") {
             VStack(alignment: .leading, spacing: 16) {
                 VStack(alignment: .leading, spacing: 6) {
                     HStack {
@@ -342,16 +342,16 @@ struct HomeView: View {
     // MARK: - Poslední výsledky
 
     private var recentCard: some View {
-        Card(title: "Poslední cvičení", systemImage: "clock") {
+        Card(title: String(localized: "Poslední cvičení"), systemImage: "clock") {
             if let last = recentSessions.first {
                 VStack(alignment: .leading, spacing: 16) {
                     HStack(spacing: 12) {
                         StatTile(title: speedUnit.symbol, value: speedUnit.format(last.wpm, strokesPerMinute: last.strokesPerMinute), systemImage: "speedometer")
-                        StatTile(title: "Přesnost", value: Format.percent(last.accuracy), systemImage: "target")
+                        StatTile(title: String(localized: "Přesnost"), value: Format.percent(last.accuracy), systemImage: "target")
                     }
                     HStack(spacing: 12) {
-                        StatTile(title: "Chyby", value: "\(last.errorCount)", systemImage: "xmark.circle")
-                        StatTile(title: "Čas", value: Format.duration(last.duration), systemImage: "timer")
+                        StatTile(title: String(localized: "Chyby"), value: "\(last.errorCount)", systemImage: "xmark.circle")
+                        StatTile(title: String(localized: "Čas"), value: Format.duration(last.duration), systemImage: "timer")
                     }
 
                     if recentSessions.count > 1 {
@@ -381,13 +381,13 @@ struct HomeView: View {
             ChartPoint(index: $0.offset, value: $0.element.wpm)
         }
         return Chart(points) { point in
-            AreaMark(x: .value("Cvičení", point.index), y: .value("WPM", point.value))
+            AreaMark(x: .value(String(localized: "Cvičení"), point.index), y: .value(String(localized: "WPM"), point.value))
                 .foregroundStyle(
                     LinearGradient(colors: [theme.accent.opacity(0.25), theme.accent.opacity(0)],
                                    startPoint: .top, endPoint: .bottom)
                 )
                 .interpolationMethod(.catmullRom)
-            LineMark(x: .value("Cvičení", point.index), y: .value("WPM", point.value))
+            LineMark(x: .value(String(localized: "Cvičení"), point.index), y: .value(String(localized: "WPM"), point.value))
                 .foregroundStyle(theme.accent)
                 .interpolationMethod(.catmullRom)
         }
@@ -402,7 +402,7 @@ struct HomeView: View {
         let weak = weakKeys(for: profile)
         let layout = layoutKind.layout
 
-        return Card(title: "Známá písmena", systemImage: "character.cursor.ibeam") {
+        return Card(title: String(localized: "Známá písmena"), systemImage: "character.cursor.ibeam") {
             VStack(alignment: .leading, spacing: 14) {
                 FlowLayout(spacing: 8) {
                     ForEach(profile.knownKeys, id: \.self) { key in

@@ -14,25 +14,25 @@ enum AppTheme: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .system: "System"
-        case .midnight: "Midnight"
-        case .graphite: "Graphite"
-        case .paper: "Paper"
-        case .ocean: "Ocean"
-        case .forest: "Forest"
-        case .warm: "Warm"
+        case .system: String(localized: "System")
+        case .midnight: String(localized: "Midnight")
+        case .graphite: String(localized: "Graphite")
+        case .paper: String(localized: "Paper")
+        case .ocean: String(localized: "Ocean")
+        case .forest: String(localized: "Forest")
+        case .warm: String(localized: "Warm")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .system: "Podle macOS"
-        case .midnight: "Vždy tmavé"
-        case .graphite: "Neutrální šedá"
-        case .paper: "Krémový papír"
-        case .ocean: "Chladná modrá"
-        case .forest: "Klidná zelená"
-        case .warm: "Teplé tóny"
+        case .system: String(localized: "Podle macOS")
+        case .midnight: String(localized: "Vždy tmavé")
+        case .graphite: String(localized: "Neutrální šedá")
+        case .paper: String(localized: "Krémový papír")
+        case .ocean: String(localized: "Chladná modrá")
+        case .forest: String(localized: "Klidná zelená")
+        case .warm: String(localized: "Teplé tóny")
         }
     }
 
@@ -171,13 +171,13 @@ enum AccentChoice: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .automatic: "Automatic"
-        case .blue: "Blue"
-        case .purple: "Purple"
-        case .green: "Green"
-        case .orange: "Orange"
-        case .pink: "Pink"
-        case .red: "Red"
+        case .automatic: String(localized: "Automatic")
+        case .blue: String(localized: "Blue")
+        case .purple: String(localized: "Purple")
+        case .green: String(localized: "Green")
+        case .orange: String(localized: "Orange")
+        case .pink: String(localized: "Pink")
+        case .red: String(localized: "Red")
         }
     }
 
@@ -206,19 +206,19 @@ enum TypingStyle: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .standard: "Default"
-        case .focus: "Focus"
-        case .minimal: "Minimal"
-        case .paper: "Paper"
+        case .standard: String(localized: "Default")
+        case .focus: String(localized: "Focus")
+        case .minimal: String(localized: "Minimal")
+        case .paper: String(localized: "Paper")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .standard: "Text, metriky, klávesnice a ruce"
-        case .focus: "Text, průběh, WPM a přesnost"
-        case .minimal: "Jen text, kurzor a čas"
-        case .paper: "Text na čistém papíře"
+        case .standard: String(localized: "Text, metriky, klávesnice a ruce")
+        case .focus: String(localized: "Text, průběh, WPM a přesnost")
+        case .minimal: String(localized: "Jen text, kurzor a čas")
+        case .paper: String(localized: "Text na čistém papíře")
         }
     }
 

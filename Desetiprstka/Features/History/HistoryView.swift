@@ -12,7 +12,7 @@ struct HistoryView: View {
         Group {
             if sessions.isEmpty {
                 ContentUnavailableView(
-                    "Žádná historie",
+                    String(localized: "Žádná historie"),
                     systemImage: "clock.arrow.circlepath",
                     description: Text("Každé dokončené cvičení se tu uloží.")
                 )

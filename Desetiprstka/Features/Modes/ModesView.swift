@@ -212,7 +212,7 @@ private struct RecommendationHero: View {
             Spacer(minLength: 12)
 
             VStack(alignment: .trailing, spacing: 10) {
-                InfoChip(text: "až +\(recommendation.reward) XP", symbol: "star.fill", tint: .orange)
+                InfoChip(text: String(localized: "až +\(recommendation.reward) XP"), symbol: "star.fill", tint: .orange)
                 Button(action: onStart) {
                     Label("Spustit", systemImage: "play.fill")
                         .padding(.horizontal, 8)
@@ -284,9 +284,9 @@ private struct DailyChallengeStrip: View {
             Spacer(minLength: 8)
 
             if isCompleted {
-                InfoChip(text: "Splněno", symbol: "checkmark", tint: .green)
+                InfoChip(text: String(localized: "Splněno"), symbol: "checkmark", tint: .green)
             } else {
-                InfoChip(text: "+\(challenge.reward) XP", symbol: "star.fill", tint: .orange)
+                InfoChip(text: String(localized: "+\(challenge.reward) XP"), symbol: "star.fill", tint: .orange)
                 Button("Splnit", action: onStart)
             }
         }
@@ -373,7 +373,7 @@ private struct ModeCard: View {
                         .lineLimit(1)
                 }
                 Spacer(minLength: 4)
-                Button(mode == .customText ? "Změnit text…" : "Upravit…", action: onCustomize)
+                Button(mode == .customText ? String(localized: "Změnit text…") : String(localized: "Upravit…"), action: onCustomize)
                     .buttonStyle(.borderless)
                     .font(.caption)
                 Button(action: onStart) {
@@ -449,13 +449,13 @@ private struct ModeCard: View {
     private var contextChip: some View {
         switch mode {
         case .practice:
-            InfoChip(text: "Adaptivní", symbol: "dial.medium")
+            InfoChip(text: String(localized: "Adaptivní"), symbol: "dial.medium")
         case .timeAttack:
             InfoChip(text: TimeAttackDuration(rawValue: timeAttackSeconds)?.title ?? "60 s", symbol: "timer", tint: tint)
         case .sprint:
-            InfoChip(text: "\(ModeRules.sprintLength) znaků", symbol: "flag.checkered")
+            InfoChip(text: String(localized: "\(ModeRules.sprintLength) znaků"), symbol: "flag.checkered")
         case .accuracyChallenge:
-            InfoChip(text: "Max \(ModeRules.accuracyMaxErrors) chyby", symbol: "xmark.circle", tint: tint)
+            InfoChip(text: String(localized: "Max \(ModeRules.accuracyMaxErrors) chyby"), symbol: "xmark.circle", tint: tint)
         case .survival:
             HStack(spacing: 2) {
                 ForEach(0..<ModeRules.survivalLives, id: \.self) { _ in
@@ -469,13 +469,13 @@ private struct ModeCard: View {
             .background(Capsule().fill(Color.red.opacity(0.1)))
             .accessibilityLabel("\(ModeRules.survivalLives) životy")
         case .endless:
-            InfoChip(text: "Bez limitu", symbol: "infinity")
+            InfoChip(text: String(localized: "Bez limitu"), symbol: "infinity")
         case .exam:
-            InfoChip(text: ExamDuration(rawValue: examMinutes)?.title ?? "10 min", symbol: "timer", tint: tint)
+            InfoChip(text: ExamDuration(rawValue: examMinutes)?.title ?? String(localized: "10 min"), symbol: "timer", tint: tint)
         case .customText:
-            InfoChip(text: "Tvůj text", symbol: "text.quote")
+            InfoChip(text: String(localized: "Tvůj text"), symbol: "text.quote")
         case .speedTest:
-            InfoChip(text: "WPM · CPM · KPM", symbol: "globe", tint: tint)
+            InfoChip(text: String(localized: "WPM · CPM · KPM"), symbol: "globe", tint: tint)
         }
     }
 

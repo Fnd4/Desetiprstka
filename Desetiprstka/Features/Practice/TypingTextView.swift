@@ -44,7 +44,7 @@ struct TypingTextView: View {
         .accessibilityLabel(engine.text)
     }
 
-    private static let placeholder = String(repeating: "m", count: windowLength) + "\nm"
+    private static let placeholder = String(repeating: "m", count: windowLength) + String(localized: "\nm")
 
     @ViewBuilder
     private var background: some View {

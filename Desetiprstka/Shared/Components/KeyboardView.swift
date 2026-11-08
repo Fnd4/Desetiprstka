@@ -43,7 +43,7 @@ struct KeyboardView: View {
             cap
                 .contentShape(Rectangle())
                 .onTapGesture { onToggle(learnable) }
-                .help(knownKeys.contains(learnable) ? "Odebrat ze známých" : "Přidat mezi známé")
+                .help(knownKeys.contains(learnable) ? String(localized: "Odebrat ze známých") : String(localized: "Přidat mezi známé"))
         } else if let onSelect, let learnable = key.learnableKey {
             cap
                 .contentShape(Rectangle())
@@ -186,7 +186,7 @@ enum HeatmapScale {
         (0.93, .mint, "93–97 %"),
         (0.88, .yellow, "88–93 %"),
         (0.80, .orange, "80–88 %"),
-        (0, .red, "pod 80 %"),
+        (0, .red, String(localized: "pod 80 %")),
     ]
 
     static func baseColor(for accuracy: Double) -> Color {

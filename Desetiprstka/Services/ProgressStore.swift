@@ -157,16 +157,16 @@ struct ProgressStore {
             maxCombo: result.maxCombo
         )
         if !outcome.newRecords.isEmpty {
-            xp.add("Osobní rekord", outcome.newRecords.count * XPRules.recordBonus)
+            xp.add(String(localized: "Osobní rekord"), outcome.newRecords.count * XPRules.recordBonus)
         }
         if result.mode == .accuracyChallenge, result.completed {
-            xp.add("Accuracy Challenge splněna", XPRules.modeChallengeBonus)
+            xp.add(String(localized: "Accuracy Challenge splněna"), XPRules.modeChallengeBonus)
         }
         if let challenge = outcome.completedChallenge {
-            xp.add("Denní výzva", challenge.reward)
+            xp.add(String(localized: "Denní výzva"), challenge.reward)
         }
         if !outcome.unlockedAchievements.isEmpty {
-            xp.add("Nové odznaky", outcome.unlockedAchievements.count * XPRules.achievementBonus)
+            xp.add(String(localized: "Nové odznaky"), outcome.unlockedAchievements.count * XPRules.achievementBonus)
         }
         progress.totalXP += xp.total
         session.xpEarned = xp.total

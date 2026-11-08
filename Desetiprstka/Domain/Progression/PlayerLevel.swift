@@ -68,23 +68,23 @@ enum XPRules {
     ) -> XPBreakdown {
         var breakdown = XPBreakdown()
         if isFullExercise {
-            breakdown.add("Dokončené cvičení", 10 + min(characters / 10, 40))
+            breakdown.add(String(localized: "Dokončené cvičení"), 10 + min(characters / 10, 40))
         } else {
-            breakdown.add("Krátké cvičení", min(characters / 20, 5))
+            breakdown.add(String(localized: "Krátké cvičení"), min(characters / 20, 5))
         }
 
         if characters >= 40 {
             if accuracy >= 1 {
-                breakdown.add("Bezchybné psaní", 30)
+                breakdown.add(String(localized: "Bezchybné psaní"), 30)
             } else if accuracy >= 0.98 {
-                breakdown.add("Přesnost nad 98 %", 20)
+                breakdown.add(String(localized: "Přesnost nad 98 %"), 20)
             } else if accuracy >= 0.95 {
-                breakdown.add("Přesnost nad 95 %", 10)
+                breakdown.add(String(localized: "Přesnost nad 95 %"), 10)
             }
         }
 
         if maxCombo >= 25 {
-            breakdown.add("Série \(maxCombo) znaků", min(maxCombo / 5, 40))
+            breakdown.add(String(localized: "Série \(maxCombo) znaků"), min(maxCombo / 5, 40))
         }
         return breakdown
     }

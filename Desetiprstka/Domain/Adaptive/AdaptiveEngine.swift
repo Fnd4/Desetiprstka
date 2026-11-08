@@ -70,18 +70,18 @@ struct AdaptiveEngine {
 
         // Výborný výkon → postup hned.
         if accuracy >= excellentAccuracy, wpm >= target * 1.25, wpm > 0, !isTop {
-            return levelUp(from: current, reason: "Výborný výkon!")
+            return levelUp(from: current, reason: String(localized: "Výborný výkon!"))
         }
 
         // Dobrý výkon → sbíráme sérii.
         if accuracy >= goodAccuracy, wpm >= target {
             let streak = goodStreak + 1
             if streak >= requiredGoodStreak, !isTop {
-                return levelUp(from: current, reason: "Skvělá série!")
+                return levelUp(from: current, reason: String(localized: "Skvělá série!"))
             }
             let message = isTop
-                ? "Jsi na nejvyšší úrovni. Pokračuj a zlepšuj rychlost."
-                : "Dobrá práce. Ještě jedno takové cvičení a postoupíš."
+                ? String(localized: "Jsi na nejvyšší úrovni. Pokračuj a zlepšuj rychlost.")
+                : String(localized: "Dobrá práce. Ještě jedno takové cvičení a postoupíš.")
             return Evaluation(previous: current, next: current, goodStreak: isTop ? 0 : streak,
                               change: .stay, message: message)
         }
@@ -91,15 +91,15 @@ struct AdaptiveEngine {
             let next = current.lowered
             return Evaluation(
                 previous: current, next: next, goodStreak: 0, change: .levelDown,
-                message: "Přesnost klesla pod \(Int(poorAccuracy * 100)) %. Trochu zpomalíme – \(next.title): \(next.stage.title)."
+                message: String(localized: "Přesnost klesla pod \(Int(poorAccuracy * 100)) %. Trochu zpomalíme – \(next.title): \(next.stage.title).")
             )
         }
 
         let message: String
         if accuracy < goodAccuracy {
-            message = "Soustřeď se hlavně na přesnost. Pro postup potřebuješ alespoň \(Int(goodAccuracy * 100)) %."
+            message = String(localized: "Soustřeď se hlavně na přesnost. Pro postup potřebuješ alespoň \(Int(goodAccuracy * 100)) %.")
         } else {
-            message = "Přesnost je skvělá. Pro postup v textu zrychli na \(Int(target.rounded())) WPM."
+            message = String(localized: "Přesnost je skvělá. Pro postup v textu zrychli na \(Int(target.rounded())) WPM.")
         }
         return Evaluation(previous: current, next: current, goodStreak: 0, change: .stay, message: message)
     }
@@ -108,8 +108,8 @@ struct AdaptiveEngine {
         let next = current.raised
         let stageChanged = next.stage != current.stage
         let detail = stageChanged
-            ? "Nový typ cvičení: \(next.stage.title)."
-            : "Postupuješ na \(next.title.lowercased())."
+            ? String(localized: "Nový typ cvičení: \(next.stage.title).")
+            : String(localized: "Postupuješ na \(next.title.lowercased()).")
         return Evaluation(previous: current, next: next, goodStreak: 0, change: .levelUp,
                           message: "\(reason) \(detail)")
     }

@@ -165,8 +165,8 @@ enum Curriculum {
     /// Text pro zobrazení klíče v UI.
     static func displayName(for key: String) -> String {
         switch key {
-        case shiftKey: "Shift"
-        case " ": "Mezerník"
+        case shiftKey: String(localized: "Shift")
+        case " ": String(localized: "Mezerník")
         default: key.uppercased()
         }
     }
@@ -176,9 +176,9 @@ enum Curriculum {
         let usesShift = key != shiftKey && (KeyboardLayoutKind.current.layout.stroke(forLearnable: key)?.usesShift ?? false)
         switch key {
         case "f", "j":
-            return "Na klávesách F a J jsou hmatové výstupky. Podle nich najdeš základní polohu bez dívání."
+            return String(localized: "Na klávesách F a J jsou hmatové výstupky. Podle nich najdeš základní polohu bez dívání.")
         case shiftKey:
-            return "Shift drž malíčkem ruky, která právě nepíše písmeno. Pro velké A tedy pravý Shift."
+            return String(localized: "Shift drž malíčkem ruky, která právě nepíše písmeno. Pro velké A tedy pravý Shift.")
         case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" where usesShift:
             return String(localized: "Číslice jsou v horní řadě nad písmeny. Drž Shift malíčkem druhé ruky a \(finger.kindName.lowercased()) natáhni nahoru – pak se hned vrať na základní řadu.")
         case "1", "2", "3", "4", "5", "6", "7", "8", "9", "0":
@@ -187,9 +187,9 @@ enum Curriculum {
             return String(localized: "Tenhle znak je na Shiftu. Shift drž malíčkem druhé ruky, znak napiš prstem \(finger.kindName.lowercased()).")
         default:
             if lessons[0].keys.contains(key) {
-                return "Klávesa leží na základní řadě. Prst \(finger.kindName.lowercased()) na ní rovnou odpočívá nebo se k ní jen posune."
+                return String(localized: "Klávesa leží na základní řadě. Prst \(finger.kindName.lowercased()) na ní rovnou odpočívá nebo se k ní jen posune.")
             }
-            return "Prst začíná na klávese \(finger.homeKeyLabel). Natáhni ho, zmáčkni a hned se vrať zpět."
+            return String(localized: "Prst začíná na klávese \(finger.homeKeyLabel). Natáhni ho, zmáčkni a hned se vrať zpět.")
         }
     }
 }

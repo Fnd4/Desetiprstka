@@ -14,12 +14,12 @@ enum SidebarItem: String, CaseIterable, Identifiable, Hashable {
 
     var title: String {
         switch self {
-        case .home: "Domů"
-        case .modes: "Režimy"
-        case .letters: "Písmena"
-        case .statistics: "Statistiky"
-        case .achievements: "Odznaky"
-        case .history: "Historie"
+        case .home: String(localized: "Domů")
+        case .modes: String(localized: "Režimy")
+        case .letters: String(localized: "Písmena")
+        case .statistics: String(localized: "Statistiky")
+        case .achievements: String(localized: "Odznaky")
+        case .history: String(localized: "Historie")
         }
     }
 

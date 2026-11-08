@@ -64,9 +64,9 @@ final class PracticeSession {
     var kindTitle: String {
         switch mode {
         case .practice: stage.title
-        case .timeAttack: "Time Attack \(timeLimit ?? 0) s"
-        case .exam: "Zkouška \((timeLimit ?? 600) / 60) min"
-        case .speedTest: "Test rychlosti \(timeLimit ?? 30) s"
+        case .timeAttack: String(localized: "Time Attack \(timeLimit ?? 0) s")
+        case .exam: String(localized: "Zkouška \((timeLimit ?? 600) / 60) min")
+        case .speedTest: String(localized: "Test rychlosti \(timeLimit ?? 30) s")
         default: mode.title
         }
     }

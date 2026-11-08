@@ -62,7 +62,7 @@ private struct GeneralSettingsTab: View {
             } header: {
                 Text("Rychlost")
             } footer: {
-                Text(speed.mode.subtitle + ". Obtížnost textu se řídí zvlášť podle tvých písmen a přesnosti. \(speedUnit.symbol): \(speedUnit.region).")
+                Text(speed.mode.subtitle + String(localized: ". Obtížnost textu se řídí zvlášť podle tvých písmen a přesnosti. \(speedUnit.symbol): \(speedUnit.region)."))
                     .foregroundStyle(.secondary)
             }
 
@@ -128,9 +128,9 @@ private struct GeneralSettingsTab: View {
         ) { result in
             switch result {
             case .success(let url):
-                backupMessage = BackupMessage(title: "Záloha uložena", text: "Soubor \(url.lastPathComponent) obsahuje celý tvůj progres.")
+                backupMessage = BackupMessage(title: String(localized: "Záloha uložena"), text: String(localized: "Soubor \(url.lastPathComponent) obsahuje celý tvůj progres."))
             case .failure(let error):
-                backupMessage = BackupMessage(title: "Zálohu se nepodařilo uložit", text: error.localizedDescription)
+                backupMessage = BackupMessage(title: String(localized: "Zálohu se nepodařilo uložit"), text: error.localizedDescription)
             }
         }
         .fileImporter(isPresented: $showsImporter, allowedContentTypes: [BackupService.fileType]) { result in
@@ -156,7 +156,7 @@ private struct GeneralSettingsTab: View {
             backupDocument = BackupDocument(data: try BackupService.encode(backup))
             showsExporter = true
         } catch {
-            backupMessage = BackupMessage(title: "Zálohu se nepodařilo vytvořit", text: error.localizedDescription)
+            backupMessage = BackupMessage(title: String(localized: "Zálohu se nepodařilo vytvořit"), text: error.localizedDescription)
         }
     }
 
@@ -168,7 +168,7 @@ private struct GeneralSettingsTab: View {
             pendingBackup = try BackupService.decode(try Data(contentsOf: url))
             confirmsRestore = true
         } catch {
-            backupMessage = BackupMessage(title: "Zálohu se nepodařilo načíst", text: error.localizedDescription)
+            backupMessage = BackupMessage(title: String(localized: "Zálohu se nepodařilo načíst"), text: error.localizedDescription)
         }
     }
 
@@ -177,7 +177,7 @@ private struct GeneralSettingsTab: View {
             try BackupService.restore(backup, context: modelContext)
             relaunch()
         } catch {
-            backupMessage = BackupMessage(title: "Obnova se nepodařila", text: error.localizedDescription)
+            backupMessage = BackupMessage(title: String(localized: "Obnova se nepodařila"), text: error.localizedDescription)
         }
     }
 
@@ -274,7 +274,7 @@ private struct AppearanceSettingsTab: View {
                                     .offset(y: 7)
                             }
                         }
-                        .help(locked.map { "Odemkne se na levelu \($0)" } ?? choice.title)
+                        .help(locked.map { String(localized: "Odemkne se na levelu \($0)") } ?? choice.title)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -479,7 +479,7 @@ private struct AccentSwatch: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .help(choice == .automatic ? "Barva podle tématu" : choice.title)
+        .help(choice == .automatic ? String(localized: "Barva podle tématu") : choice.title)
         .accessibilityLabel("Barva \(choice.title)")
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
@@ -549,7 +549,7 @@ private struct SoundSettingsTab: View {
                         preview: { audio.preview(option) }
                     )
                 }
-                VolumeSlider(title: "Hlasitost úhozů", value: $typingVolume) {
+                VolumeSlider(title: String(localized: "Hlasitost úhozů"), value: $typingVolume) {
                     audio.preview(pack)
                 }
                 .disabled(!typingEnabled || pack == .silent)
@@ -584,7 +584,7 @@ private struct SoundSettingsTab: View {
 
             Section {
                 Toggle("Zvuky odměn", isOn: $rewardsEnabled)
-                VolumeSlider(title: "Hlasitost odměn", value: $rewardVolume) {
+                VolumeSlider(title: String(localized: "Hlasitost odměn"), value: $rewardVolume) {
                     audio.preview(.completion)
                 }
                 .disabled(!rewardsEnabled)
@@ -605,18 +605,18 @@ private struct SoundSettingsTab: View {
 
             Section("Zdroje zvuků") {
                 SoundCredit(
-                    title: "Typewriter.wav",
-                    detail: "ddohler · Freesound · CC BY 4.0 · upraveno (oříznutí, hlasitost, výška)",
+                    title: String(localized: "Typewriter.wav"),
+                    detail: String(localized: "ddohler · Freesound · CC BY 4.0 · upraveno (oříznutí, hlasitost, výška)"),
                     url: "https://freesound.org/people/ddohler/sounds/9098/"
                 )
                 SoundCredit(
-                    title: "Typing on a mechanical keyboard",
-                    detail: "Vladislav_Sazonov · Freesound · CC0",
+                    title: String(localized: "Typing on a mechanical keyboard"),
+                    detail: String(localized: "Vladislav_Sazonov · Freesound · CC0"),
                     url: "https://freesound.org/people/Vladislav_Sazonov/sounds/860426/"
                 )
                 SoundCredit(
-                    title: "Typewriter soft click, Hard typewriter click, Mechanical typewriter single hit",
-                    detail: "Mixkit · Mixkit Sound Effects Free License",
+                    title: String(localized: "Typewriter soft click, Hard typewriter click, Mechanical typewriter single hit"),
+                    detail: String(localized: "Mixkit · Mixkit Sound Effects Free License"),
                     url: "https://mixkit.co/free-sound-effects/typewriter/"
                 )
             }

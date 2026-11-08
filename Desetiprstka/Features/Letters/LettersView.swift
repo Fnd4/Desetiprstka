@@ -149,7 +149,7 @@ private struct LessonRow: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-                Button(isComplete ? "Odebrat vše" : "Vybrat vše") {
+                Button(isComplete ? String(localized: "Odebrat vše") : String(localized: "Vybrat vše")) {
                     onSetAll(!isComplete)
                 }
                 .controlSize(.small)
@@ -160,10 +160,10 @@ private struct LessonRow: View {
     private func helpText(for key: String) -> String {
         var parts: [String] = []
         if let finger = layout.stroke(forLearnable: key)?.primary.finger {
-            parts.append("Prst: \(finger.name)")
+            parts.append(String(localized: "Prst: \(finger.name)"))
         }
         if let value = accuracy[key] {
-            parts.append("Přesnost: \(Format.percent(value))")
+            parts.append(String(localized: "Přesnost: \(Format.percent(value))"))
         }
         return parts.joined(separator: " · ")
     }

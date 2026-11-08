@@ -94,10 +94,10 @@ struct PracticeView: View {
 
     private var closeButton: some View {
         Button(action: closeTapped) {
-            Label(viewModel.mode == .endless ? "Dokončit" : "Ukončit",
+            Label(viewModel.mode == .endless ? String(localized: "Dokončit") : String(localized: "Ukončit"),
                   systemImage: viewModel.mode == .endless ? "checkmark" : "xmark")
         }
-        .help(viewModel.mode == .endless ? "Dokončit a uložit (Esc)" : "Ukončit cvičení (Esc)")
+        .help(viewModel.mode == .endless ? String(localized: "Dokončit a uložit (Esc)") : String(localized: "Ukončit cvičení (Esc)"))
     }
 
     private var header: some View {
@@ -122,16 +122,16 @@ struct PracticeView: View {
                 HStack(spacing: 26) {
                     modeIndicator(at: context.date)
                     metric(speedUnit.symbol, liveSpeed(at: context.date), detail: targetLabel)
-                    metric("Přesnost", Format.percent(engine.accuracy),
+                    metric(String(localized: "Přesnost"), Format.percent(engine.accuracy),
                            tint: engine.accuracy < 0.9 && engine.keystrokes > 10 ? .orange : .primary)
                     if style != .focus {
                         if viewModel.mode == .exam {
-                            metric("Chyby", "\(engine.errors)", tint: engine.errors > 0 ? .orange : .primary)
+                            metric(String(localized: "Chyby"), "\(engine.errors)", tint: engine.errors > 0 ? .orange : .primary)
                         } else {
-                            metric("Combo", "\(engine.combo)")
+                            metric(String(localized: "Combo"), "\(engine.combo)")
                         }
                         if !viewModel.mode.isTimed {
-                            metric("Čas", Format.duration(engine.elapsed(at: context.date)))
+                            metric(String(localized: "Čas"), Format.duration(engine.elapsed(at: context.date)))
                         }
                     }
                 }
@@ -139,8 +139,8 @@ struct PracticeView: View {
 
             HStack(spacing: 4) {
                 if style.showsKeyboard {
-                    toggleButton(isOn: $showsKeyboard, symbol: "keyboard", help: "Zobrazit klávesnici (⇧⌘K)", key: "k")
-                    toggleButton(isOn: $showsHands, symbol: "hand.raised", help: "Zobrazit ruce (⇧⌘H)", key: "h")
+                    toggleButton(isOn: $showsKeyboard, symbol: "keyboard", help: String(localized: "Zobrazit klávesnici (⇧⌘K)"), key: "k")
+                    toggleButton(isOn: $showsHands, symbol: "hand.raised", help: String(localized: "Zobrazit ruce (⇧⌘H)"), key: "h")
                     Button {
                         viewModel.nextExercise()
                     } label: {
@@ -194,7 +194,7 @@ struct PracticeView: View {
         }
         .keyboardShortcut("m", modifiers: [.command, .shift])
         .help("Metronom – \(Int(viewModel.metronomeBeatsPerMinute)) úderů za minutu (⇧⌘M)")
-        .accessibilityLabel(metronomeEnabled ? "Vypnout metronom" : "Zapnout metronom")
+        .accessibilityLabel(metronomeEnabled ? String(localized: "Vypnout metronom") : String(localized: "Zapnout metronom"))
     }
 
     /// Živá rychlost ve zvolené jednotce.
@@ -271,14 +271,14 @@ struct PracticeView: View {
         var parts = [viewModel.plan.difficulty.title, viewModel.plan.speed.label]
         let focus = viewModel.exercise.focusKeys.map { Curriculum.displayName(for: $0) }
         if !focus.isEmpty {
-            parts.append("procvičujeme \(focus.joined(separator: ", "))")
+            parts.append(String(localized: "procvičujeme \(focus.joined(separator: ", "))"))
         }
         return parts.joined(separator: " · ")
     }
 
     private var targetLabel: String? {
         guard let target = viewModel.plan.speed.targetWPM else { return nil }
-        return "cíl \(speedUnit.format(target))"
+        return String(localized: "cíl \(speedUnit.format(target))")
     }
 
     @ViewBuilder
@@ -286,7 +286,7 @@ struct PracticeView: View {
         switch viewModel.mode {
         case .timeAttack, .exam, .speedTest:
             let remaining = viewModel.remainingTime(at: date) ?? 0
-            metric("Zbývá", Format.duration(remaining.rounded(.up)),
+            metric(String(localized: "Zbývá"), Format.duration(remaining.rounded(.up)),
                    tint: remaining <= 5 && engine.isStarted ? .red : .primary)
         case .survival:
             VStack(alignment: .trailing, spacing: 0) {
@@ -306,7 +306,7 @@ struct PracticeView: View {
             .lineLimit(1)
             .fixedSize()
         case .accuracyChallenge:
-            metric("Zbývá chyb", "\(viewModel.errorsLeft ?? 0)",
+            metric(String(localized: "Zbývá chyb"), "\(viewModel.errorsLeft ?? 0)",
                    tint: (viewModel.errorsLeft ?? 0) == 0 ? .red : .primary)
         case .practice, .sprint, .endless, .customText:
             EmptyView()
@@ -392,14 +392,14 @@ struct PracticeView: View {
 
     private var startHint: String {
         switch viewModel.mode {
-        case .timeAttack: "Odpočet se spustí prvním stiskem. Esc ukončí bez uložení."
-        case .endless: "Piš, jak dlouho chceš. Esc nebo Dokončit výsledek uloží."
-        case .survival: "Každá chyba stojí život. Esc ukončí bez uložení."
-        case .accuracyChallenge: "Nejvýše \(viewModel.plan.maxErrors) chyby. Esc ukončí bez uložení."
-        case .practice, .sprint: "Začni psát – čas se spustí prvním stiskem. Esc ukončí cvičení."
-        case .exam: "Zkouška \(viewModel.plan.examDuration.title): čas běží od prvního stisku. Chyba = −100 úhozů. Esc ukončí bez uložení."
-        case .customText: "Opiš svůj text. Čas se spustí prvním stiskem, Esc ukončí bez uložení."
-        case .speedTest: "Test \(viewModel.plan.speedTestDuration.title): čas běží od prvního stisku. Esc ukončí bez uložení."
+        case .timeAttack: String(localized: "Odpočet se spustí prvním stiskem. Esc ukončí bez uložení.")
+        case .endless: String(localized: "Piš, jak dlouho chceš. Esc nebo Dokončit výsledek uloží.")
+        case .survival: String(localized: "Každá chyba stojí život. Esc ukončí bez uložení.")
+        case .accuracyChallenge: String(localized: "Nejvýše \(viewModel.plan.maxErrors) chyby. Esc ukončí bez uložení.")
+        case .practice, .sprint: String(localized: "Začni psát – čas se spustí prvním stiskem. Esc ukončí cvičení.")
+        case .exam: String(localized: "Zkouška \(viewModel.plan.examDuration.title): čas běží od prvního stisku. Chyba = −100 úhozů. Esc ukončí bez uložení.")
+        case .customText: String(localized: "Opiš svůj text. Čas se spustí prvním stiskem, Esc ukončí bez uložení.")
+        case .speedTest: String(localized: "Test \(viewModel.plan.speedTestDuration.title): čas běží od prvního stisku. Esc ukončí bez uložení.")
         }
     }
 
@@ -407,13 +407,13 @@ struct PracticeView: View {
         guard let expected = engine.expected else { return "" }
         var text = "\(displayName(for: expected)) – \(stroke.primary.finger.name)"
         if let shift = stroke.keys.first(where: { $0.kind == .leftShift || $0.kind == .rightShift }) {
-            text += " + \(shift.kind == .leftShift ? "levý" : "pravý") Shift (\(shift.finger.name))"
+            text += String(localized: " + \(shift.kind == .leftShift ? "levý" : "pravý") Shift (\(shift.finger.name))")
         }
         return text
     }
 
     private func displayName(for character: Character) -> String {
-        character == " " ? "mezerník" : String(character)
+        character == " " ? String(localized: "mezerník") : String(character)
     }
 
     // MARK: - Klávesnice

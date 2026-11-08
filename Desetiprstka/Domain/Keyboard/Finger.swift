@@ -32,26 +32,26 @@ enum Finger: Int, CaseIterable, Identifiable, Codable, Sendable {
     /// Plný název, např. „ukazováček levé ruky“.
     var name: String {
         switch self {
-        case .leftPinky: "malíček levé ruky"
-        case .leftRing: "prsteníček levé ruky"
-        case .leftMiddle: "prostředníček levé ruky"
-        case .leftIndex: "ukazováček levé ruky"
-        case .thumbs: "palec"
-        case .rightIndex: "ukazováček pravé ruky"
-        case .rightMiddle: "prostředníček pravé ruky"
-        case .rightRing: "prsteníček pravé ruky"
-        case .rightPinky: "malíček pravé ruky"
+        case .leftPinky: String(localized: "malíček levé ruky")
+        case .leftRing: String(localized: "prsteníček levé ruky")
+        case .leftMiddle: String(localized: "prostředníček levé ruky")
+        case .leftIndex: String(localized: "ukazováček levé ruky")
+        case .thumbs: String(localized: "palec")
+        case .rightIndex: String(localized: "ukazováček pravé ruky")
+        case .rightMiddle: String(localized: "prostředníček pravé ruky")
+        case .rightRing: String(localized: "prsteníček pravé ruky")
+        case .rightPinky: String(localized: "malíček pravé ruky")
         }
     }
 
     /// Krátký název do legendy.
     var kindName: String {
         switch self {
-        case .leftPinky, .rightPinky: "Malíček"
-        case .leftRing, .rightRing: "Prsteníček"
-        case .leftMiddle, .rightMiddle: "Prostředníček"
-        case .leftIndex, .rightIndex: "Ukazováček"
-        case .thumbs: "Palec"
+        case .leftPinky, .rightPinky: String(localized: "Malíček")
+        case .leftRing, .rightRing: String(localized: "Prsteníček")
+        case .leftMiddle, .rightMiddle: String(localized: "Prostředníček")
+        case .leftIndex, .rightIndex: String(localized: "Ukazováček")
+        case .thumbs: String(localized: "Palec")
         }
     }
 
@@ -62,7 +62,7 @@ enum Finger: Int, CaseIterable, Identifiable, Codable, Sendable {
         case .leftRing: "S"
         case .leftMiddle: "D"
         case .leftIndex: "F"
-        case .thumbs: "mezerníku"
+        case .thumbs: String(localized: "mezerníku")
         case .rightIndex: "J"
         case .rightMiddle: "K"
         case .rightRing: "L"

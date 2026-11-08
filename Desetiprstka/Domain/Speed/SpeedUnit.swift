@@ -15,27 +15,27 @@ enum SpeedUnit: String, CaseIterable, Identifiable, Sendable {
 
     var title: String {
         switch self {
-        case .wpm: "Slova za minutu (WPM)"
-        case .cpm: "Znaky za minutu (CPM)"
-        case .strokes: "Úhozy za minutu (KPM)"
+        case .wpm: String(localized: "Slova za minutu (WPM)")
+        case .cpm: String(localized: "Znaky za minutu (CPM)")
+        case .strokes: String(localized: "Úhozy za minutu (KPM)")
         }
     }
 
     /// Kde se jednotka používá.
     var region: String {
         switch self {
-        case .wpm: "Mezinárodní standard – USA, UK, Monkeytype, 10FastFingers"
-        case .cpm: "Německo, Polsko, Rusko, Asie"
-        case .strokes: "České a slovenské školy, ZAV, státní zkoušky"
+        case .wpm: String(localized: "Mezinárodní standard – USA, UK, Monkeytype, 10FastFingers")
+        case .cpm: String(localized: "Německo, Polsko, Rusko, Asie")
+        case .strokes: String(localized: "České a slovenské školy, ZAV, státní zkoušky")
         }
     }
 
     /// Krátký popisek za číslem.
     var symbol: String {
         switch self {
-        case .wpm: "WPM"
-        case .cpm: "CPM"
-        case .strokes: "úh./min"
+        case .wpm: String(localized: "WPM")
+        case .cpm: String(localized: "CPM")
+        case .strokes: String(localized: "úh./min")
         }
     }
 

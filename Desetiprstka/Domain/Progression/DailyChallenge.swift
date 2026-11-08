@@ -49,23 +49,23 @@ struct DailyChallenge: Equatable, Sendable {
 
     var title: String {
         switch kind {
-        case .reachWPM: "Dosáhni \(Int(target)) WPM"
-        case .typeCharacters: "Napiš dnes \(Int(target)) znaků"
-        case .accuracy: "Dokonči cvičení s přesností \(Int((target * 100).rounded())) %"
-        case .maxErrors: "Cvičení s nejvýše \(Int(target)) chybami"
-        case .practiceMinutes: "Piš dnes celkem \(Int(target)) minut"
-        case .combo: "Napiš \(Int(target)) znaků v řadě bez chyby"
+        case .reachWPM: String(localized: "Dosáhni \(Int(target)) WPM")
+        case .typeCharacters: String(localized: "Napiš dnes \(Int(target)) znaků")
+        case .accuracy: String(localized: "Dokonči cvičení s přesností \(Int((target * 100).rounded())) %")
+        case .maxErrors: String(localized: "Cvičení s nejvýše \(Int(target)) chybami")
+        case .practiceMinutes: String(localized: "Piš dnes celkem \(Int(target)) minut")
+        case .combo: String(localized: "Napiš \(Int(target)) znaků v řadě bez chyby")
         }
     }
 
     var detail: String {
         switch kind {
-        case .reachWPM: "V jednom cvičení (alespoň \(Self.minimumCharacters) znaků)."
-        case .typeCharacters: "Počítají se všechna dnešní cvičení."
-        case .accuracy: "Cvičení musí mít alespoň \(Self.accuracyMinimumCharacters) znaků."
-        case .maxErrors: "Cvičení musí mít alespoň \(Self.maxErrorsMinimumCharacters) znaků."
-        case .practiceMinutes: "Počítá se čas psaní ve všech režimech."
-        case .combo: "Jakýkoliv režim – stačí jedna nepřerušená série."
+        case .reachWPM: String(localized: "V jednom cvičení (alespoň \(Self.minimumCharacters) znaků).")
+        case .typeCharacters: String(localized: "Počítají se všechna dnešní cvičení.")
+        case .accuracy: String(localized: "Cvičení musí mít alespoň \(Self.accuracyMinimumCharacters) znaků.")
+        case .maxErrors: String(localized: "Cvičení musí mít alespoň \(Self.maxErrorsMinimumCharacters) znaků.")
+        case .practiceMinutes: String(localized: "Počítá se čas psaní ve všech režimech.")
+        case .combo: String(localized: "Jakýkoliv režim – stačí jedna nepřerušená série.")
         }
     }
 
@@ -104,11 +104,11 @@ struct DailyChallenge: Equatable, Sendable {
 
     func formattedProgress(_ progress: Double) -> String {
         switch kind {
-        case .reachWPM: "\(Int(progress.rounded())) / \(Int(target)) WPM"
-        case .typeCharacters: "\(Int(progress)) / \(Int(target)) znaků"
+        case .reachWPM: String(localized: "\(Int(progress.rounded())) / \(Int(target)) WPM")
+        case .typeCharacters: String(localized: "\(Int(progress)) / \(Int(target)) znaků")
         case .accuracy: "\(Int((progress * 100).rounded())) / \(Int((target * 100).rounded())) %"
-        case .maxErrors: progress >= 1 ? "Splněno" : "Zatím nesplněno"
-        case .practiceMinutes: "\(Int(progress)) / \(Int(target)) min"
+        case .maxErrors: progress >= 1 ? String(localized: "Splněno") : String(localized: "Zatím nesplněno")
+        case .practiceMinutes: String(localized: "\(Int(progress)) / \(Int(target)) min")
         case .combo: "\(Int(progress)) / \(Int(target))"
         }
     }

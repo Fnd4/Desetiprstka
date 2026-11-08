@@ -30,11 +30,11 @@ struct ExamEvaluation: Equatable, Sendable {
 
         var title: String {
             switch self {
-            case .excellent: "Výborně"
-            case .veryGood: "Chvalitebně"
-            case .good: "Dobře"
-            case .sufficient: "Dostatečně"
-            case .insufficient: "Nedostatečně"
+            case .excellent: String(localized: "Výborně")
+            case .veryGood: String(localized: "Chvalitebně")
+            case .good: String(localized: "Dobře")
+            case .sufficient: String(localized: "Dostatečně")
+            case .insufficient: String(localized: "Nedostatečně")
             }
         }
 
@@ -66,13 +66,13 @@ struct ExamEvaluation: Equatable, Sendable {
             }
             var parts: [String] = []
             if netPerMinute < requirement.net {
-                parts.append("+\(Int((requirement.net - netPerMinute).rounded(.up))) čistých úhozů/min")
+                parts.append(String(localized: "+\(Int((requirement.net - netPerMinute).rounded(.up))) čistých úhozů/min"))
             }
             if errorPercent > requirement.errorPercent {
-                parts.append("chybovost pod \(Format.decimal(requirement.errorPercent)) %")
+                parts.append(String(localized: "chybovost pod \(Format.decimal(requirement.errorPercent)) %"))
             }
             guard !parts.isEmpty else { return nil }
-            return "Na \(better.rawValue) (\(better.title.lowercased())): " + parts.joined(separator: " a ")
+            return String(localized: "Na \(better.rawValue) (\(better.title.lowercased())): ") + parts.joined(separator: " a ")
         }
     }
 }

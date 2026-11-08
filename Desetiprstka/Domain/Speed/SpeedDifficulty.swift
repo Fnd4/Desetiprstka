@@ -13,23 +13,23 @@ enum SpeedDifficulty: String, CaseIterable, Identifiable, Codable, Sendable {
 
     var title: String {
         switch self {
-        case .relaxed: "Relaxed"
-        case .easy: "Easy"
-        case .normal: "Normal"
-        case .hard: "Hard"
-        case .expert: "Expert"
-        case .custom: "Custom"
+        case .relaxed: String(localized: "Relaxed")
+        case .easy: String(localized: "Easy")
+        case .normal: String(localized: "Normal")
+        case .hard: String(localized: "Hard")
+        case .expert: String(localized: "Expert")
+        case .custom: String(localized: "Custom")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .relaxed: "Bez tlaku na rychlost – rozhoduje jen přesnost"
-        case .easy: "Klidné tempo pro začátečníky"
-        case .normal: "Plynulé psaní"
-        case .hard: "Rychlé psaní"
-        case .expert: "Profesionální tempo"
-        case .custom: "Vlastní cílové WPM"
+        case .relaxed: String(localized: "Bez tlaku na rychlost – rozhoduje jen přesnost")
+        case .easy: String(localized: "Klidné tempo pro začátečníky")
+        case .normal: String(localized: "Plynulé psaní")
+        case .hard: String(localized: "Rychlé psaní")
+        case .expert: String(localized: "Profesionální tempo")
+        case .custom: String(localized: "Vlastní cílové WPM")
         }
     }
 
@@ -105,7 +105,7 @@ struct SpeedRecommendation: Equatable, Sendable {
     let reason: String
 
     var actionTitle: String {
-        "Přepnout na \(suggested.label)"
+        String(localized: "Přepnout na \(suggested.label)")
     }
 }
 
@@ -137,7 +137,7 @@ struct SpeedAdvisor {
             return SpeedRecommendation(
                 direction: .up,
                 suggested: SpeedSetting(mode: .easy, customWPM: current.customWPM),
-                reason: "Píšeš přesně a svižně. Zkus mírný tlak na rychlost."
+                reason: String(localized: "Píšeš přesně a svižně. Zkus mírný tlak na rychlost.")
             )
         }
 
@@ -154,7 +154,7 @@ struct SpeedAdvisor {
             return SpeedRecommendation(
                 direction: .up,
                 suggested: suggested,
-                reason: "V posledních cvičeních jsi cíl \(Int(target)) WPM výrazně překonal při přesnosti nad 95 %."
+                reason: String(localized: "V posledních cvičeních jsi cíl \(Int(target)) WPM výrazně překonal při přesnosti nad 95 %.")
             )
         }
 
@@ -171,7 +171,7 @@ struct SpeedAdvisor {
             return SpeedRecommendation(
                 direction: .down,
                 suggested: suggested,
-                reason: "Cíl \(Int(target)) WPM je teď příliš vysoko. Nižší tempo ti pomůže psát přesněji."
+                reason: String(localized: "Cíl \(Int(target)) WPM je teď příliš vysoko. Nižší tempo ti pomůže psát přesněji.")
             )
         }
         return nil

@@ -144,7 +144,7 @@ struct ProgressBackup: Codable {
     var summary: String {
         let level = PlayerLevel(totalXP: player?.totalXP ?? 0).level
         let date = exportedAt.formatted(date: .long, time: .shortened)
-        return "Záloha z \(date): \(sessions.count) cvičení, level \(level), \(achievements.count) odznaků."
+        return String(localized: "Záloha z \(date): \(sessions.count) cvičení, level \(level), \(achievements.count) odznaků.")
     }
 }
 
@@ -156,11 +156,11 @@ enum BackupError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .notABackup:
-            "Tenhle soubor není záloha Desetiprstky."
+            String(localized: "Tenhle soubor není záloha Desetiprstky.")
         case .tampered:
-            "Záloha je poškozená nebo byla upravena, proto ji nejde obnovit."
+            String(localized: "Záloha je poškozená nebo byla upravena, proto ji nejde obnovit.")
         case .newerVersion(let v):
-            "Záloha pochází z novější verze Desetiprstky (formát \(v)). Aktualizuj aplikaci a zkus to znovu."
+            String(localized: "Záloha pochází z novější verze Desetiprstky (formát \(v)). Aktualizuj aplikaci a zkus to znovu.")
         }
     }
 }
@@ -279,7 +279,7 @@ enum BackupService {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.dateFormat = "yyyy-MM-dd"
-        return "Desetiprstka záloha \(formatter.string(from: date))"
+        return String(localized: "Desetiprstka záloha \(formatter.string(from: date))")
     }
 
     // MARK: Obnova

@@ -37,22 +37,22 @@ enum Format {
 
     /// Reakční doba v milisekundách.
     static func milliseconds(_ seconds: Double) -> String {
-        "\(Int((seconds * 1000).rounded())) ms"
+        String(localized: "\(Int((seconds * 1000).rounded())) ms")
     }
 
     /// Delší doba jako „2 h 15 min“.
     static func longDuration(_ seconds: TimeInterval) -> String {
         let minutes = Int((seconds / 60).rounded())
-        if minutes < 60 { return "\(minutes) min" }
-        return "\(minutes / 60) h \(minutes % 60) min"
+        if minutes < 60 { return String(localized: "\(minutes) min") }
+        return String(localized: "\(minutes / 60) h \(minutes % 60) min")
     }
 
     /// „1 den“, „3 dny“, „7 dní“.
     static func days(_ count: Int) -> String {
         switch count {
-        case 1: "1 den"
-        case 2...4: "\(count) dny"
-        default: "\(count) dní"
+        case 1: String(localized: "1 den")
+        case 2...4: String(localized: "\(count) dny")
+        default: String(localized: "\(count) dní")
         }
     }
 

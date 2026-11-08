@@ -19,29 +19,29 @@ enum GameMode: String, CaseIterable, Identifiable, Codable, Sendable {
 
     var title: String {
         switch self {
-        case .practice: "Practice"
-        case .timeAttack: "Time Attack"
-        case .sprint: "Sprint"
-        case .accuracyChallenge: "Accuracy Challenge"
-        case .survival: "Survival"
-        case .endless: "Endless"
-        case .exam: "Zkouška"
-        case .customText: "Vlastní text"
-        case .speedTest: "Test rychlosti"
+        case .practice: String(localized: "Practice")
+        case .timeAttack: String(localized: "Time Attack")
+        case .sprint: String(localized: "Sprint")
+        case .accuracyChallenge: String(localized: "Accuracy Challenge")
+        case .survival: String(localized: "Survival")
+        case .endless: String(localized: "Endless")
+        case .exam: String(localized: "Zkouška")
+        case .customText: String(localized: "Vlastní text")
+        case .speedTest: String(localized: "Test rychlosti")
         }
     }
 
     var subtitle: String {
         switch self {
-        case .practice: "Klasické cvičení s adaptivní obtížností."
-        case .timeAttack: "Napiš co nejvíc správných znaků za daný čas."
-        case .sprint: "Krátký text – dokonči ho co nejrychleji."
-        case .accuracyChallenge: "Dokonči text s nejvýše \(ModeRules.accuracyMaxErrors) chybami."
-        case .survival: "\(ModeRules.survivalLives) životy. Každá vlna je těžší a rychlejší."
-        case .endless: "Nekonečný text. Skončíš, až budeš chtít."
-        case .exam: "Opis na čas. Čisté úhozy, chybovost a známka jako ve škole."
-        case .customText: "Opiš libovolný text – článek, poznámky nebo úkol do školy."
-        case .speedTest: "Běžná slova na čas. Výsledek ve WPM, CPM i úhozech – porovnatelný se světem."
+        case .practice: String(localized: "Klasické cvičení s adaptivní obtížností.")
+        case .timeAttack: String(localized: "Napiš co nejvíc správných znaků za daný čas.")
+        case .sprint: String(localized: "Krátký text – dokonči ho co nejrychleji.")
+        case .accuracyChallenge: String(localized: "Dokonči text s nejvýše \(ModeRules.accuracyMaxErrors) chybami.")
+        case .survival: String(localized: "\(ModeRules.survivalLives) životy. Každá vlna je těžší a rychlejší.")
+        case .endless: String(localized: "Nekonečný text. Skončíš, až budeš chtít.")
+        case .exam: String(localized: "Opis na čas. Čisté úhozy, chybovost a známka jako ve škole.")
+        case .customText: String(localized: "Opiš libovolný text – článek, poznámky nebo úkol do školy.")
+        case .speedTest: String(localized: "Běžná slova na čas. Výsledek ve WPM, CPM i úhozech – porovnatelný se světem.")
         }
     }
 
@@ -91,7 +91,7 @@ enum ExamDuration: Int, CaseIterable, Identifiable, Codable, Sendable {
     case minutes10 = 10
 
     var id: Int { rawValue }
-    var title: String { "\(rawValue) min" }
+    var title: String { String(localized: "\(rawValue) min") }
     var seconds: TimeInterval { TimeInterval(rawValue * 60) }
 }
 

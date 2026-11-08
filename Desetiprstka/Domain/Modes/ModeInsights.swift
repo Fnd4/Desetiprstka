@@ -37,9 +37,9 @@ enum ModeBadge: Equatable, Sendable {
 
     var title: String {
         switch self {
-        case .newRecord: "Nový rekord"
-        case .bestToday(let value): "Dnes \(value)"
-        case .notTried: "Nevyzkoušeno"
+        case .newRecord: String(localized: "Nový rekord")
+        case .bestToday(let value): String(localized: "Dnes \(value)")
+        case .notTried: String(localized: "Nevyzkoušeno")
         }
     }
 
@@ -136,15 +136,15 @@ enum ModeInsightsBuilder {
         let last = sessions.first
         return ModeInsight(
             mode: .speedTest,
-            personalBestLabel: "PB",
+            personalBestLabel: String(localized: "PB"),
             personalBest: best.map { SpeedUnit.current.label($0) },
             goal: ModeGoal(
                 target: SpeedUnit.current.label(target),
                 progress: last.map { min($0.wpm / target, 1) },
-                progressLabel: last.map { "Poslední \(SpeedUnit.current.label($0.wpm)) · \(Format.percent($0.accuracy))" }
-                    ?? "Zatím bez pokusu"
+                progressLabel: last.map { String(localized: "Poslední \(SpeedUnit.current.label($0.wpm)) · \(Format.percent($0.accuracy))") }
+                    ?? String(localized: "Zatím bez pokusu")
             ),
-            detail: average.isEmpty ? nil : "Průměr posledních \(average.count): \(SpeedUnit.current.label(average.reduce(0, +) / Double(average.count)))",
+            detail: average.isEmpty ? nil : String(localized: "Průměr posledních \(average.count): \(SpeedUnit.current.label(average.reduce(0, +) / Double(average.count)))"),
             badge: badge,
             lastPlayed: last?.date
         )
@@ -158,14 +158,14 @@ enum ModeInsightsBuilder {
         let last = sessions.first?.score
         return ModeInsight(
             mode: .exam,
-            personalBestLabel: "PB",
-            personalBest: best.map { "\(Format.number($0)) čistých" },
+            personalBestLabel: String(localized: "PB"),
+            personalBest: best.map { String(localized: "\(Format.number($0)) čistých") },
             goal: ModeGoal(
-                target: "\(Format.number(next.1)) úh./min",
+                target: String(localized: "\(Format.number(next.1)) úh./min"),
                 progress: last.map { min(Double($0) / next.1, 1) },
-                progressLabel: last.map { "Poslední \(Format.number($0)) čistých úh./min" } ?? "Zatím bez pokusu"
+                progressLabel: last.map { String(localized: "Poslední \(Format.number($0)) čistých úh./min") } ?? String(localized: "Zatím bez pokusu")
             ),
-            detail: "Na známku \(next.0.rawValue) · \(input.exam.title)",
+            detail: String(localized: "Na známku \(next.0.rawValue) · \(input.exam.title)"),
             badge: badge,
             lastPlayed: sessions.first?.date
         )
@@ -178,15 +178,15 @@ enum ModeInsightsBuilder {
         let target = ((best ?? 20) + 2).rounded(.up)
         return ModeInsight(
             mode: .customText,
-            personalBestLabel: "PB",
+            personalBestLabel: String(localized: "PB"),
             personalBest: best.map { SpeedUnit.current.label($0) },
             goal: ModeGoal(
                 target: SpeedUnit.current.label(target),
                 progress: last.map { min($0.wpm / target, 1) },
-                progressLabel: last.map { "Poslední \(SpeedUnit.current.label($0.wpm)) · \(Format.percent($0.accuracy))" }
-                    ?? "Vlož text a začni"
+                progressLabel: last.map { String(localized: "Poslední \(SpeedUnit.current.label($0.wpm)) · \(Format.percent($0.accuracy))") }
+                    ?? String(localized: "Vlož text a začni")
             ),
-            detail: sessions.isEmpty ? nil : "Opsáno \(sessions.count)×",
+            detail: sessions.isEmpty ? nil : String(localized: "Opsáno \(sessions.count)×"),
             badge: badge,
             lastPlayed: sessions.first?.date
         )
@@ -199,9 +199,9 @@ enum ModeInsightsBuilder {
             let next = input.difficulty.raised
             let streak = min(input.goodStreak, 2)
             goal = ModeGoal(
-                target: "úroveň \(next.level)",
+                target: String(localized: "úroveň \(next.level)"),
                 progress: Double(streak) / 2,
-                progressLabel: "Série k postupu \(streak)/2"
+                progressLabel: String(localized: "Série k postupu \(streak)/2")
             )
         } else {
             let target = ((best ?? 20) + 2).rounded(.up)
@@ -209,12 +209,12 @@ enum ModeInsightsBuilder {
             goal = ModeGoal(
                 target: SpeedUnit.current.label(target),
                 progress: lastWPM.map { min($0 / target, 1) },
-                progressLabel: lastWPM.map { "Poslední \(SpeedUnit.current.label($0))" } ?? "Zatím bez pokusu"
+                progressLabel: lastWPM.map { String(localized: "Poslední \(SpeedUnit.current.label($0))") } ?? String(localized: "Zatím bez pokusu")
             )
         }
         return ModeInsight(
             mode: .practice,
-            personalBestLabel: "PB",
+            personalBestLabel: String(localized: "PB"),
             personalBest: best.map { "\(SpeedUnit.current.label($0))" },
             goal: goal,
             detail: "\(input.difficulty.title) · \(input.difficulty.stage.title)",
@@ -236,15 +236,15 @@ enum ModeInsightsBuilder {
         let lastScore = last.map { Double($0.score ?? $0.characters) }
         return ModeInsight(
             mode: .timeAttack,
-            personalBestLabel: "PB",
-            personalBest: best.map { "\(Format.number($0)) znaků" },
+            personalBestLabel: String(localized: "PB"),
+            personalBest: best.map { String(localized: "\(Format.number($0)) znaků") },
             goal: ModeGoal(
-                target: "\(Format.number(target)) znaků",
+                target: String(localized: "\(Format.number(target)) znaků"),
                 progress: (lastScore ?? best).map { min($0 / target, 1) },
-                progressLabel: lastScore.map { "Poslední \(Format.number($0)) znaků" }
-                    ?? (best != nil ? "Rekord vůči cíli" : "Zatím bez pokusu")
+                progressLabel: lastScore.map { String(localized: "Poslední \(Format.number($0)) znaků") }
+                    ?? (best != nil ? String(localized: "Rekord vůči cíli") : String(localized: "Zatím bez pokusu"))
             ),
-            detail: "Délka \(input.timeAttack.title)",
+            detail: String(localized: "Délka \(input.timeAttack.title)"),
             badge: badge,
             lastPlayed: last?.date
         )
@@ -263,14 +263,14 @@ enum ModeInsightsBuilder {
         let lastWPM = finished.first?.wpm
         return ModeInsight(
             mode: .sprint,
-            personalBestLabel: "PB",
+            personalBestLabel: String(localized: "PB"),
             personalBest: best.map { "\(SpeedUnit.current.label($0))" },
             goal: ModeGoal(
                 target: SpeedUnit.current.label(target),
                 progress: lastWPM.map { min($0 / target, 1) },
-                progressLabel: lastWPM.map { "Poslední \(SpeedUnit.current.label($0))" } ?? "Zatím bez pokusu"
+                progressLabel: lastWPM.map { String(localized: "Poslední \(SpeedUnit.current.label($0))") } ?? String(localized: "Zatím bez pokusu")
             ),
-            detail: bestTime.map { "Nejlepší čas \(Format.duration($0))" },
+            detail: bestTime.map { String(localized: "Nejlepší čas \(Format.duration($0))") },
             badge: badge,
             lastPlayed: sessions.first?.date
         )
@@ -289,15 +289,15 @@ enum ModeInsightsBuilder {
         let successes = finished.count
         return ModeInsight(
             mode: .accuracyChallenge,
-            personalBestLabel: "PB",
+            personalBestLabel: String(localized: "PB"),
             personalBest: best.map { Format.percent($0) },
             goal: ModeGoal(
-                target: target >= 1 ? "bez chyby" : Format.percent(target),
+                target: target >= 1 ? String(localized: "bez chyby") : Format.percent(target),
                 progress: last.map { min(($0.completed ? $0.accuracy : 0) / target, 1) },
-                progressLabel: last.map { $0.completed ? "Poslední \(Format.percent($0.accuracy))" : "Poslední pokus nesplněn" }
-                    ?? "Zatím bez pokusu"
+                progressLabel: last.map { $0.completed ? String(localized: "Poslední \(Format.percent($0.accuracy))") : String(localized: "Poslední pokus nesplněn") }
+                    ?? String(localized: "Zatím bez pokusu")
             ),
-            detail: sessions.isEmpty ? nil : "Splněno \(successes)× z \(sessions.count)",
+            detail: sessions.isEmpty ? nil : String(localized: "Splněno \(successes)× z \(sessions.count)"),
             badge: badge,
             lastPlayed: last?.date
         )
@@ -309,12 +309,12 @@ enum ModeInsightsBuilder {
         let lastScore = last.map { Double($0.score ?? $0.characters) }
         return ModeInsight(
             mode: .survival,
-            personalBestLabel: "PB",
-            personalBest: best.map { "\(Format.number($0)) bodů" },
+            personalBestLabel: String(localized: "PB"),
+            personalBest: best.map { String(localized: "\(Format.number($0)) bodů") },
             goal: ModeGoal(
-                target: "\(Format.number(target)) bodů",
+                target: String(localized: "\(Format.number(target)) bodů"),
                 progress: lastScore.map { min($0 / target, 1) },
-                progressLabel: lastScore.map { "Poslední \(Format.number($0)) bodů" } ?? "Zatím bez pokusu"
+                progressLabel: lastScore.map { String(localized: "Poslední \(Format.number($0)) bodů") } ?? String(localized: "Zatím bez pokusu")
             ),
             detail: nil,
             badge: badge,
@@ -328,14 +328,14 @@ enum ModeInsightsBuilder {
         let last = sessions.first
         return ModeInsight(
             mode: .endless,
-            personalBestLabel: "Nejdelší",
-            personalBest: longest.map { "\(Format.number($0.characters)) znaků" },
+            personalBestLabel: String(localized: "Nejdelší"),
+            personalBest: longest.map { String(localized: "\(Format.number($0.characters)) znaků") },
             goal: ModeGoal(
-                target: "\(Format.number(target)) znaků",
+                target: String(localized: "\(Format.number(target)) znaků"),
                 progress: last.map { min(Double($0.characters) / target, 1) },
-                progressLabel: last.map { "Poslední \(Format.number($0.characters)) znaků" } ?? "Zatím bez pokusu"
+                progressLabel: last.map { String(localized: "Poslední \(Format.number($0.characters)) znaků") } ?? String(localized: "Zatím bez pokusu")
             ),
-            detail: longest.map { "Nejdelší session \(Format.duration($0.duration))" },
+            detail: longest.map { String(localized: "Nejdelší session \(Format.duration($0.duration))") },
             badge: badge,
             lastPlayed: last?.date
         )
@@ -376,10 +376,10 @@ enum ModeInsightsBuilder {
     private static func formatMetric(_ value: Double, mode: GameMode) -> String {
         switch mode {
         case .practice, .sprint: "\(SpeedUnit.current.label(value))"
-        case .timeAttack, .endless: "\(Format.number(value)) znaků"
-        case .survival: "\(Format.number(value)) bodů"
+        case .timeAttack, .endless: String(localized: "\(Format.number(value)) znaků")
+        case .survival: String(localized: "\(Format.number(value)) bodů")
         case .accuracyChallenge: Format.percent(value)
-        case .exam: "\(Format.number(value)) čistých"
+        case .exam: String(localized: "\(Format.number(value)) čistých")
         case .customText, .speedTest: SpeedUnit.current.label(value)
         }
     }
@@ -403,13 +403,13 @@ enum ModeInsightsBuilder {
         if let challenge = input.dailyChallenge, !input.dailyChallengeCompleted {
             let mode = mode(for: challenge.kind)
             return make(mode, insight: byMode[mode], input: input,
-                        reason: "Pomůže ti splnit dnešní výzvu.", bonus: challenge.reward)
+                        reason: String(localized: "Pomůže ti splnit dnešní výzvu."), bonus: challenge.reward)
         }
 
         // 2) Režim, který uživatel ještě nezkusil.
         if let fresh = playable.first(where: { byMode[$0]?.lastPlayed == nil }) {
             return make(fresh, insight: byMode[fresh], input: input,
-                        reason: "Tenhle režim jsi ještě nezkusil.", bonus: 0)
+                        reason: String(localized: "Tenhle režim jsi ještě nezkusil."), bonus: 0)
         }
 
         // 3) Režim, který nejdéle odpočívá.
@@ -417,7 +417,7 @@ enum ModeInsightsBuilder {
             (byMode[$0]?.lastPlayed ?? .distantPast) < (byMode[$1]?.lastPlayed ?? .distantPast)
         } ?? .timeAttack
         return make(oldest, insight: byMode[oldest], input: input,
-                    reason: "Na tenhle režim jsi už chvíli nesáhl. Zkus překonat svůj rekord.", bonus: 0)
+                    reason: String(localized: "Na tenhle režim jsi už chvíli nesáhl. Zkus překonat svůj rekord."), bonus: 0)
     }
 
     /// Režim, který nejlépe pomůže splnit daný typ výzvy.
@@ -436,12 +436,12 @@ enum ModeInsightsBuilder {
         reason: String,
         bonus: Int
     ) -> ModeRecommendation {
-        let title = mode == .timeAttack ? "Zkus \(mode.title) \(input.timeAttack.title)" : "Zkus \(mode.title)"
+        let title = mode == .timeAttack ? String(localized: "Zkus \(mode.title) \(input.timeAttack.title)") : String(localized: "Zkus \(mode.title)")
         let goal: String
         if let insight, insight.personalBest != nil {
-            goal = "Cíl: překonat \(insight.personalBest ?? "") → \(insight.goal.target)"
+            goal = String(localized: "Cíl: překonat \(insight.personalBest ?? "") → \(insight.goal.target)")
         } else {
-            goal = "Cíl: \(insight?.goal.target ?? "dokončit")"
+            goal = String(localized: "Cíl: \(insight?.goal.target ?? "dokončit")")
         }
         return ModeRecommendation(
             mode: mode,

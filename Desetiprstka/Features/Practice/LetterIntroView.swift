@@ -40,7 +40,7 @@ struct LetterIntroView: View {
             Spacer(minLength: 0)
 
             VStack(spacing: 10) {
-                Text(key == Curriculum.shiftKey ? "Nová klávesa" : "Nové písmeno")
+                Text(key == Curriculum.shiftKey ? String(localized: "Nová klávesa") : String(localized: "Nové písmeno"))
                     .font(.title3)
                     .foregroundStyle(.secondary)
 
@@ -78,7 +78,7 @@ struct LetterIntroView: View {
                     withAnimation(.snappy) { index += 1 }
                 }
             } label: {
-                Text(isLast ? "Rozumím, jdeme psát" : "Další klávesa")
+                Text(isLast ? String(localized: "Rozumím, jdeme psát") : String(localized: "Další klávesa"))
                     .frame(minWidth: 200)
             }
             .buttonStyle(.borderedProminent)
@@ -92,8 +92,8 @@ struct LetterIntroView: View {
 
     private var fingerSentence: String {
         if key == Curriculum.shiftKey {
-            return "Mačkej malíčkem – levý nebo pravý Shift"
+            return String(localized: "Mačkej malíčkem – levý nebo pravý Shift")
         }
-        return "Mačkej: \(finger.name)"
+        return String(localized: "Mačkej: \(finger.name)")
     }
 }
