@@ -1,0 +1,7145 @@
+{
+  "sourceLanguage": "cs",
+  "strings": {
+    "\nm": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\nm"
+          }
+        }
+      }
+    },
+    " + %@ Shift (%@)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " + %@ Shift (%@)"
+          }
+        }
+      }
+    },
+    " den": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " world"
+          }
+        }
+      }
+    },
+    " · rekord %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " · record %@"
+          }
+        }
+      }
+    },
+    "%@\n\nAktuální progres se nahradí obsahem zálohy. Pro jistotu se nejdřív uloží do Application Support/Desetiprstka/Zálohy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@\n\nYour current progress will be replaced by the backup. To be safe, it's first saved to Application Support/Desetiprstka/Zálohy."
+          }
+        }
+      }
+    },
+    "%@ %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ %@"
+          }
+        }
+      }
+    },
+    "%@ (~%lld znaků)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (~%lld characters)"
+          }
+        }
+      }
+    },
+    "%@ / %@ XP": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ / %@ XP"
+          }
+        }
+      }
+    },
+    "%@ bodů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ points"
+          }
+        }
+      }
+    },
+    "%@ hrubých úhozů − %lld × %lld za chyby = %@ čistých úhozů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ gross keystrokes − %lld × %lld for mistakes = %@ net keystrokes"
+          }
+        }
+      }
+    },
+    "%@ na levelu %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ at level %lld"
+          }
+        }
+      }
+    },
+    "%@ znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ characters"
+          }
+        }
+      }
+    },
+    "%@ · level %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · level %lld"
+          }
+        }
+      }
+    },
+    "%@ úh./min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ks/min"
+          }
+        }
+      }
+    },
+    "%@ úhozů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ keystrokes"
+          }
+        }
+      }
+    },
+    "%@ čistých": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ net"
+          }
+        }
+      }
+    },
+    "%lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
+          }
+        }
+      }
+    },
+    "%lld %%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld %%"
+          }
+        }
+      }
+    },
+    "%lld / %lld WPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld WPM"
+          }
+        }
+      }
+    },
+    "%lld / %lld min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld min"
+          }
+        }
+      }
+    },
+    "%lld / %lld znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld characters"
+          }
+        }
+      }
+    },
+    "%lld bodů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld points"
+          }
+        }
+      }
+    },
+    "%lld combo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld combo"
+          }
+        }
+      }
+    },
+    "%lld day streak": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld day streak"
+          }
+        }
+      }
+    },
+    "%lld dny": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days"
+          }
+        }
+      }
+    },
+    "%lld dní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld days"
+          }
+        }
+      }
+    },
+    "%lld h %lld min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld h %lld min"
+          }
+        }
+      }
+    },
+    "%lld min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld min"
+          }
+        }
+      }
+    },
+    "%lld ms": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld ms"
+          }
+        }
+      }
+    },
+    "%lld z %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld"
+          }
+        }
+      }
+    },
+    "%lld z %lld odemčeno": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld of %lld unlocked"
+          }
+        }
+      }
+    },
+    "%lld znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld characters"
+          }
+        }
+      }
+    },
+    "%lld životy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld lives"
+          }
+        }
+      }
+    },
+    "%lld životy. Každá vlna je těžší a rychlejší.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld lives. Every wave is harder and faster."
+          }
+        }
+      }
+    },
+    "%lld×": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld×"
+          }
+        }
+      }
+    },
+    "+%lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%lld"
+          }
+        }
+      }
+    },
+    "+%lld XP": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%lld XP"
+          }
+        }
+      }
+    },
+    "+%lld čistých úhozů/min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+%lld net keystrokes/min"
+          }
+        }
+      }
+    },
+    ". Obtížnost textu se řídí zvlášť podle tvých písmen a přesnosti. %@: %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ". Text difficulty adapts separately to your letters and accuracy. %@: %@."
+          }
+        }
+      }
+    },
+    "1 den": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 day"
+          }
+        }
+      }
+    },
+    "10 min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 min"
+          }
+        }
+      }
+    },
+    "Accuracy Challenge": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy Challenge"
+          }
+        }
+      }
+    },
+    "Accuracy Challenge splněna": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy Challenge completed"
+          }
+        }
+      }
+    },
+    "Adaptive": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptive"
+          }
+        }
+      }
+    },
+    "Adaptivní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adaptive"
+          }
+        }
+      }
+    },
+    "Aktivita za posledních 30 dní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activity in the last 30 days"
+          }
+        }
+      }
+    },
+    "Aktivní dny: %lld z 30": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Active days: %lld of 30"
+          }
+        }
+      }
+    },
+    "Aktuální (%@)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current (%@)"
+          }
+        }
+      }
+    },
+    "Anglická (Británie) – QWERTY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English (UK) – QWERTY"
+          }
+        }
+      }
+    },
+    "Anglická (USA) – QWERTY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "English (US) – QWERTY"
+          }
+        }
+      }
+    },
+    "Aplikace zvolí obtížnost, rychlost i délku podle tvých výsledků.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The app picks difficulty, speed and length based on your results."
+          }
+        }
+      }
+    },
+    "Automatic": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatic"
+          }
+        }
+      }
+    },
+    "Balíček %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pack %@"
+          }
+        }
+      }
+    },
+    "Barva %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Color %@"
+          }
+        }
+      }
+    },
+    "Barva podle tématu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theme color"
+          }
+        }
+      }
+    },
+    "Barva zvýraznění": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accent color"
+          }
+        }
+      }
+    },
+    "Bez limitu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No limit"
+          }
+        }
+      }
+    },
+    "Bez tlaku na rychlost – rozhoduje jen přesnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No speed pressure – only accuracy counts"
+          }
+        }
+      }
+    },
+    "Bez zvuku úhozů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No keystroke sounds"
+          }
+        }
+      }
+    },
+    "Bezchybné psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flawless typing"
+          }
+        }
+      }
+    },
+    "Blok": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Block"
+          }
+        }
+      }
+    },
+    "Blue": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blue"
+          }
+        }
+      }
+    },
+    "Běžná slova na čas. Výsledek ve WPM, CPM i úhozech – porovnatelný se světem.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Common words against the clock. Results in WPM, CPM and keystrokes – comparable worldwide."
+          }
+        }
+      }
+    },
+    "CPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CPM"
+          }
+        }
+      }
+    },
+    "Celkový čas": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total time"
+          }
+        }
+      }
+    },
+    "Challenger": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenger"
+          }
+        }
+      }
+    },
+    "Chladná modrá": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cool blue"
+          }
+        }
+      }
+    },
+    "Chvalitebně": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Very Good"
+          }
+        }
+      }
+    },
+    "Chyba": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error"
+          }
+        }
+      }
+    },
+    "Chybovost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error rate"
+          }
+        }
+      }
+    },
+    "Chyby": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Errors"
+          }
+        }
+      }
+    },
+    "Clicky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clicky"
+          }
+        }
+      }
+    },
+    "Co nejvíc správných znaků za daný čas.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As many correct characters as you can in the time limit."
+          }
+        }
+      }
+    },
+    "Combo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combo"
+          }
+        }
+      }
+    },
+    "Combo Master": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combo Master"
+          }
+        }
+      }
+    },
+    "Combo efekt %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combo effect %@"
+          }
+        }
+      }
+    },
+    "Consistent": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consistent"
+          }
+        }
+      }
+    },
+    "Custom": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom"
+          }
+        }
+      }
+    },
+    "Cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exercises"
+          }
+        }
+      }
+    },
+    "Cvičení musí mít alespoň %lld znaků.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The exercise must have at least %lld characters."
+          }
+        }
+      }
+    },
+    "Cvičení s nejvýše %lld chybami": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An exercise with at most %lld mistakes"
+          }
+        }
+      }
+    },
+    "Cvičení se skládají jen z vybraných kláves. Seznam můžeš kdykoliv změnit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exercises only use the keys you select. You can change the list anytime."
+          }
+        }
+      }
+    },
+    "Cíl": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal"
+          }
+        }
+      }
+    },
+    "Cíl %lld WPM je teď příliš vysoko. Nižší tempo ti pomůže psát přesněji.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The %lld WPM goal is too high right now. A slower pace will help you type more accurately."
+          }
+        }
+      }
+    },
+    "Cíl: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal: %@"
+          }
+        }
+      }
+    },
+    "Cíl: překonat %@ → %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goal: beat %@ → %@"
+          }
+        }
+      }
+    },
+    "Cílové WPM: %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Target WPM: %lld"
+          }
+        }
+      }
+    },
+    "Další cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next exercise"
+          }
+        }
+      }
+    },
+    "Další klávesa": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next key"
+          }
+        }
+      }
+    },
+    "Další na řadě": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Up next"
+          }
+        }
+      }
+    },
+    "Další odměna na levelu %lld: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next reward at level %lld: %@"
+          }
+        }
+      }
+    },
+    "Další odměna: %@ na levelu %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next reward: %@ at level %lld"
+          }
+        }
+      }
+    },
+    "Další znaky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More Symbols"
+          }
+        }
+      }
+    },
+    "Data": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data"
+          }
+        }
+      }
+    },
+    "Datum": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
+          }
+        }
+      }
+    },
+    "Dedicated": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dedicated"
+          }
+        }
+      }
+    },
+    "Default": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Default"
+          }
+        }
+      }
+    },
+    "Den": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day"
+          }
+        }
+      }
+    },
+    "Denní výzva": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily challenge"
+          }
+        }
+      }
+    },
+    "Denní výzva splněna: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily challenge completed: %@"
+          }
+        }
+      }
+    },
+    "Desetiprstka": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desetiprstka"
+          }
+        }
+      }
+    },
+    "Desetiprstka záloha %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desetiprstka backup %@"
+          }
+        }
+      }
+    },
+    "Desetiprstý": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ten-Finger Pro"
+          }
+        }
+      }
+    },
+    "Dlouhá": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long"
+          }
+        }
+      }
+    },
+    "Dlouhá slova": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long Words"
+          }
+        }
+      }
+    },
+    "Dlouhé": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long"
+          }
+        }
+      }
+    },
+    "Dnes %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today %@"
+          }
+        }
+      }
+    },
+    "Dnes ještě nemáš žádné cvičení. Jedno krátké stačí.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You haven't practiced today. One short exercise is enough."
+          }
+        }
+      }
+    },
+    "Dobrá práce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good job"
+          }
+        }
+      }
+    },
+    "Dobrá práce. Ještě jedno takové cvičení a postoupíš.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good job. One more exercise like this and you'll level up."
+          }
+        }
+      }
+    },
+    "Dobře": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Good"
+          }
+        }
+      }
+    },
+    "Dokončená cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed exercises"
+          }
+        }
+      }
+    },
+    "Dokončené cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exercise completed"
+          }
+        }
+      }
+    },
+    "Dokončení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completion"
+          }
+        }
+      }
+    },
+    "Dokončení lekce, nový rekord, denní výzva, odznak a nový level. Po lekci zazní nanejvýš dva zvuky.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lesson complete, new record, daily challenge, badge and new level. At most two sounds play after a lesson."
+          }
+        }
+      }
+    },
+    "Dokonči 50 cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete 50 exercises."
+          }
+        }
+      }
+    },
+    "Dokonči cvičení s přesností %lld %%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish an exercise with %lld %% accuracy"
+          }
+        }
+      }
+    },
+    "Dokonči cvičení se 100% přesností.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete an exercise with 100% accuracy."
+          }
+        }
+      }
+    },
+    "Dokonči první cvičení a uvidíš tu svůj pokrok.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete your first exercise to see your progress here."
+          }
+        }
+      }
+    },
+    "Dokonči první cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete your first exercise."
+          }
+        }
+      }
+    },
+    "Dokonči text s nejvýše %lld chybami.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish the text with at most %lld mistakes."
+          }
+        }
+      }
+    },
+    "Dokončit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish"
+          }
+        }
+      }
+    },
+    "Dokončit a uložit (Esc)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish and save (Esc)"
+          }
+        }
+      }
+    },
+    "Dolní řada": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bottom Row"
+          }
+        }
+      }
+    },
+    "Domů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        }
+      }
+    },
+    "Doporučeno pro tebe": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recommended for you"
+          }
+        }
+      }
+    },
+    "Doporučený další krok": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recommended next step"
+          }
+        }
+      }
+    },
+    "Dostatečně": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satisfactory"
+          }
+        }
+      }
+    },
+    "Dosáhni %lld WPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reach %lld WPM"
+          }
+        }
+      }
+    },
+    "Dosáhni 50 WPM.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reach 50 WPM."
+          }
+        }
+      }
+    },
+    "Dosáhni 80 WPM.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reach 80 WPM."
+          }
+        }
+      }
+    },
+    "Délka": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Length"
+          }
+        }
+      }
+    },
+    "Délka %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Length %@"
+          }
+        }
+      }
+    },
+    "Délka cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exercise length"
+          }
+        }
+      }
+    },
+    "Délka textu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text length"
+          }
+        }
+      }
+    },
+    "Easy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easy"
+          }
+        }
+      }
+    },
+    "Efekt combo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Combo effect"
+          }
+        }
+      }
+    },
+    "Endless": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endless"
+          }
+        }
+      }
+    },
+    "Endless · %lld znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endless · %lld characters"
+          }
+        }
+      }
+    },
+    "Expert": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expert"
+          }
+        }
+      }
+    },
+    "First Steps": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First Steps"
+          }
+        }
+      }
+    },
+    "Focus": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Focus"
+          }
+        }
+      }
+    },
+    "Focus Mode": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Focus Mode"
+          }
+        }
+      }
+    },
+    "Forest": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forest"
+          }
+        }
+      }
+    },
+    "Graphite": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Graphite"
+          }
+        }
+      }
+    },
+    "Green": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Green"
+          }
+        }
+      }
+    },
+    "Hard": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard"
+          }
+        }
+      }
+    },
+    "Heatmapa klávesnice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyboard heatmap"
+          }
+        }
+      }
+    },
+    "Historie": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "History"
+          }
+        }
+      }
+    },
+    "Hlasitost odměn": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reward volume"
+          }
+        }
+      }
+    },
+    "Hlasitost úhozů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keystroke volume"
+          }
+        }
+      }
+    },
+    "Hodnocení opisu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exam evaluation"
+          }
+        }
+      }
+    },
+    "Horní řada": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Top Row"
+          }
+        }
+      }
+    },
+    "Hotovo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "Hrubé úhozy/min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gross keystrokes/min"
+          }
+        }
+      }
+    },
+    "Interpunkce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Punctuation"
+          }
+        }
+      }
+    },
+    "Jak je vyznačený znak, který máš napsat. Žádný styl neposouvá text.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How the character you need to type is marked. No style shifts the text."
+          }
+        }
+      }
+    },
+    "Jakýkoliv režim – stačí jedna nepřerušená série.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Any mode – one unbroken streak is enough."
+          }
+        }
+      }
+    },
+    "Jazyk a klávesnice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language & Keyboard"
+          }
+        }
+      }
+    },
+    "Jazyk cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practice language"
+          }
+        }
+      }
+    },
+    "Jazyk cvičení určuje slova a věty, rozhraní appky se řídí jazykem macOS. Rozložení musí odpovídat zdroji vstupu v Nastavení systému → Klávesnice.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The practice language sets the words and sentences; the app's interface follows your macOS language. The layout must match the input source in System Settings → Keyboard."
+          }
+        }
+      }
+    },
+    "Jednotka rychlosti": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed unit"
+          }
+        }
+      }
+    },
+    "Jemné, tlumené ťuknutí – upozorní, ale nevyruší.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A soft, muted tap – noticeable but not distracting."
+          }
+        }
+      }
+    },
+    "Jen text, kurzor a čas": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only text, cursor and time"
+          }
+        }
+      }
+    },
+    "Jiskry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sparks"
+          }
+        }
+      }
+    },
+    "Jsem úplný začátečník": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm a complete beginner"
+          }
+        }
+      }
+    },
+    "Jsi na nejvyšší úrovni. Pokračuj a zlepšuj rychlost.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're at the top level. Keep going and build your speed."
+          }
+        }
+      }
+    },
+    "Jsi připraven na %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're ready for %@"
+          }
+        }
+      }
+    },
+    "Jsi připraven na novou klávesu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're ready for a new key"
+          }
+        }
+      }
+    },
+    "Každá chyba stojí život, vlny zrychlují.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every mistake costs a life, and the waves speed up."
+          }
+        }
+      }
+    },
+    "Každá chyba stojí život. Esc ukončí bez uložení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every mistake costs a life. Esc quits without saving."
+          }
+        }
+      }
+    },
+    "Každé dokončené cvičení se tu uloží.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every completed exercise is saved here."
+          }
+        }
+      }
+    },
+    "Kde chybuješ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where you make mistakes"
+          }
+        }
+      }
+    },
+    "Keyboard Master": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyboard Master"
+          }
+        }
+      }
+    },
+    "Klasické cvičení s adaptivní obtížností.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classic practice with adaptive difficulty."
+          }
+        }
+      }
+    },
+    "Klasický": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classic"
+          }
+        }
+      }
+    },
+    "Klasický test na čas. Výsledek ve WPM, CPM i úhozech.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The classic timed test. Results in WPM, CPM and keystrokes."
+          }
+        }
+      }
+    },
+    "Klidná zelená": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calm green"
+          }
+        }
+      }
+    },
+    "Klidné cvičení, které tě posouvá osnovou.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calm practice that moves you through the course."
+          }
+        }
+      }
+    },
+    "Klidné tempo pro začátečníky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A calm pace for beginners"
+          }
+        }
+      }
+    },
+    "Klikni na Start Practice a začni. Výsledky se ti tady objeví hned po prvním cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click Start Practice to begin. Your results will show up here right after your first exercise."
+          }
+        }
+      }
+    },
+    "Klikni na klávesu pro detailní statistiku.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click a key for detailed statistics."
+          }
+        }
+      }
+    },
+    "Klikni na klávesu pro přidání nebo odebrání": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Click a key to add or remove it"
+          }
+        }
+      }
+    },
+    "Klávesa": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key"
+          }
+        }
+      }
+    },
+    "Klávesa %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key %@"
+          }
+        }
+      }
+    },
+    "Klávesa leží na základní řadě. Prst %@ na ní rovnou odpočívá nebo se k ní jen posune.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This key is on the home row. Your %@ rests right on it or just slides over."
+          }
+        }
+      }
+    },
+    "Klávesy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keys"
+          }
+        }
+      }
+    },
+    "Kolik správných znaků napíšeš za 60 sekund?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many correct characters can you type in 60 seconds?"
+          }
+        }
+      }
+    },
+    "Kombinace znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Character Drills"
+          }
+        }
+      }
+    },
+    "Konec hry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Game over"
+          }
+        }
+      }
+    },
+    "Kovový úder psacího stroje": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The metal strike of a typewriter"
+          }
+        }
+      }
+    },
+    "Krátká": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short"
+          }
+        }
+      }
+    },
+    "Krátká slova": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short Words"
+          }
+        }
+      }
+    },
+    "Krátké": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short"
+          }
+        }
+      }
+    },
+    "Krátké cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Short exercise"
+          }
+        }
+      }
+    },
+    "Krátký text na jeden nádech. Na čas.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A short text in one go. Against the clock."
+          }
+        }
+      }
+    },
+    "Krátký text – dokonči ho co nejrychleji.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A short text – finish it as fast as you can."
+          }
+        }
+      }
+    },
+    "Krémový papír": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cream paper"
+          }
+        }
+      }
+    },
+    "Která písmena už umíš?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Which letters do you already know?"
+          }
+        }
+      }
+    },
+    "Kurzor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cursor"
+          }
+        }
+      }
+    },
+    "Kurzor %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cursor %@"
+          }
+        }
+      }
+    },
+    "Legenda": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legend"
+          }
+        }
+      }
+    },
+    "Lekce %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lesson %lld"
+          }
+        }
+      }
+    },
+    "Level %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld"
+          }
+        }
+      }
+    },
+    "Level %lld · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld · %@"
+          }
+        }
+      }
+    },
+    "Level up": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level up"
+          }
+        }
+      }
+    },
+    "Lightning": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lightning"
+          }
+        }
+      }
+    },
+    "Lvl %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lvl %lld"
+          }
+        }
+      }
+    },
+    "Malíček": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pinky"
+          }
+        }
+      }
+    },
+    "Marathon": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marathon"
+          }
+        }
+      }
+    },
+    "Max": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max"
+          }
+        }
+      }
+    },
+    "Max %lld chyby": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max %lld mistakes"
+          }
+        }
+      }
+    },
+    "Max combo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max combo"
+          }
+        }
+      }
+    },
+    "Maximální level": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max level"
+          }
+        }
+      }
+    },
+    "Mačkej malíčkem – levý nebo pravý Shift": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press with your pinky – left or right Shift"
+          }
+        }
+      }
+    },
+    "Mačkej: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press with: %@"
+          }
+        }
+      }
+    },
+    "Mechanical": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mechanical"
+          }
+        }
+      }
+    },
+    "Metronom při psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metronome while typing"
+          }
+        }
+      }
+    },
+    "Metronom – %lld úderů za minutu (⇧⌘M)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metronome – %lld beats per minute (⇧⌘M)"
+          }
+        }
+      }
+    },
+    "Mezerník": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Space"
+          }
+        }
+      }
+    },
+    "Mezinárodní standard – USA, UK, Monkeytype, 10FastFingers": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "International standard – USA, UK, Monkeytype, 10FastFingers"
+          }
+        }
+      }
+    },
+    "Midnight": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Midnight"
+          }
+        }
+      }
+    },
+    "Minimal": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimal"
+          }
+        }
+      }
+    },
+    "Minuty": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minutes"
+          }
+        }
+      }
+    },
+    "Mistr klávesnice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyboard Master"
+          }
+        }
+      }
+    },
+    "Mixkit · Mixkit Sound Effects Free License": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mixkit · Mixkit Sound Effects Free License"
+          }
+        }
+      }
+    },
+    "Máš odemčené všechno.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You've unlocked everything."
+          }
+        }
+      }
+    },
+    "Méně častá písmena abecedy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The less common letters of the alphabet."
+          }
+        }
+      }
+    },
+    "Na %lld (%@): ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For %lld (%@):"
+          }
+        }
+      }
+    },
+    "Na klávesách F a J jsou hmatové výstupky. Podle nich najdeš základní polohu bez dívání.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The F and J keys have small bumps. Use them to find the home position without looking."
+          }
+        }
+      }
+    },
+    "Na tenhle režim jsi už chvíli nesáhl. Zkus překonat svůj rekord.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You haven't played this mode for a while. Try to beat your record."
+          }
+        }
+      }
+    },
+    "Na známku %lld · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "For grade %lld · %@"
+          }
+        }
+      }
+    },
+    "Na české klávesnici se píšou se Shiftem v horní řadě.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On a Czech keyboard you type them with Shift in the top row."
+          }
+        }
+      }
+    },
+    "Napiš %lld znaků v řadě bez chyby": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type %lld characters in a row without a mistake"
+          }
+        }
+      }
+    },
+    "Napiš 250 znaků v řadě bez chyby.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type 250 characters in a row without a mistake."
+          }
+        }
+      }
+    },
+    "Napiš celkem 10 000 znaků.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type 10,000 characters in total."
+          }
+        }
+      }
+    },
+    "Napiš co nejvíc správných znaků za daný čas.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type as many correct characters as you can in the time limit."
+          }
+        }
+      }
+    },
+    "Napiš dnes %lld znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type %lld characters today"
+          }
+        }
+      }
+    },
+    "Napsané znaky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Characters typed"
+          }
+        }
+      }
+    },
+    "Nastaveno": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set"
+          }
+        }
+      }
+    },
+    "Nastavit cvičení (⇧⌘N)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set up practice (⇧⌘N)"
+          }
+        }
+      }
+    },
+    "Nastavit cvičení…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set Up Practice…"
+          }
+        }
+      }
+    },
+    "Nauč se všechny klávesy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn every key."
+          }
+        }
+      }
+    },
+    "Naučené klávesy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learned keys"
+          }
+        }
+      }
+    },
+    "Naučíš se psát všemi deseti bez dívání na klávesnici. Cvičení se přizpůsobují tvému tempu a častěji opakují písmena, u kterých chybuješ.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You'll learn to type with all ten fingers without looking at the keyboard. Exercises adapt to your pace and repeat the letters you miss more often."
+          }
+        }
+      }
+    },
+    "Nedostatečně": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fail"
+          }
+        }
+      }
+    },
+    "Nejdelší": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest"
+          }
+        }
+      }
+    },
+    "Nejdelší combo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest combo"
+          }
+        }
+      }
+    },
+    "Nejdelší session %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest session %@"
+          }
+        }
+      }
+    },
+    "Nejdelší série": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest streak"
+          }
+        }
+      }
+    },
+    "Nejlepší Sprint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best Sprint"
+          }
+        }
+      }
+    },
+    "Nejlepší Survival": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best Survival"
+          }
+        }
+      }
+    },
+    "Nejlepší přesnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best accuracy"
+          }
+        }
+      }
+    },
+    "Nejlepší čas %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best time %@"
+          }
+        }
+      }
+    },
+    "Nejsilnější klávesy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strongest keys"
+          }
+        }
+      }
+    },
+    "Nejslabší klávesy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weakest keys"
+          }
+        }
+      }
+    },
+    "Nejvyšší rychlost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Top speed"
+          }
+        }
+      }
+    },
+    "Nejvíc chybuješ u %@. Cvičení je bude zařazovat častěji.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You make the most mistakes on %@. Exercises will include them more often."
+          }
+        }
+      }
+    },
+    "Nejvíc znaků v jednom cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most characters in one exercise"
+          }
+        }
+      }
+    },
+    "Nejvýše %lld chyby. Esc ukončí bez uložení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At most %lld mistakes. Esc quits without saving."
+          }
+        }
+      }
+    },
+    "Nejčastější písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Most Common Letters"
+          }
+        }
+      }
+    },
+    "Nekonečný text. Skončíš, až budeš chtít.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endless text. Stop whenever you like."
+          }
+        }
+      }
+    },
+    "Neutrální šedá": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neutral grey"
+          }
+        }
+      }
+    },
+    "Nevyzkoušeno": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not tried yet"
+          }
+        }
+      }
+    },
+    "Normal": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Normal"
+          }
+        }
+      }
+    },
+    "Nová hodnost: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New rank: %@"
+          }
+        }
+      }
+    },
+    "Nová klávesa": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New key"
+          }
+        }
+      }
+    },
+    "Nová klávesa %lld z %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New key %lld of %lld"
+          }
+        }
+      }
+    },
+    "Nováček": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Newbie"
+          }
+        }
+      }
+    },
+    "Nové odznaky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New badges"
+          }
+        }
+      }
+    },
+    "Nové písmeno": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New letter"
+          }
+        }
+      }
+    },
+    "Nový level %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New level %lld"
+          }
+        }
+      }
+    },
+    "Nový odznak: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New badge: %@"
+          }
+        }
+      }
+    },
+    "Nový rekord": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New record"
+          }
+        }
+      }
+    },
+    "Nový text": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New text"
+          }
+        }
+      }
+    },
+    "Nový text (⌘R)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New text (⌘R)"
+          }
+        }
+      }
+    },
+    "Nový typ cvičení: %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New exercise type: %@."
+          }
+        }
+      }
+    },
+    "Náhled": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preview"
+          }
+        }
+      }
+    },
+    "Německo, Polsko, Rusko, Asie": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Germany, Poland, Russia, Asia"
+          }
+        }
+      }
+    },
+    "OK": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "Obecné": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        }
+      }
+    },
+    "Obnova se nepodařila": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore failed"
+          }
+        }
+      }
+    },
+    "Obnovit a restartovat": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore and restart"
+          }
+        }
+      }
+    },
+    "Obnovit progres ze zálohy?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore progress from backup?"
+          }
+        }
+      }
+    },
+    "Obnovit…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore…"
+          }
+        }
+      }
+    },
+    "Obrazovka psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing screen"
+          }
+        }
+      }
+    },
+    "Obtížnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Difficulty"
+          }
+        }
+      }
+    },
+    "Obtížnost textu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text difficulty"
+          }
+        }
+      }
+    },
+    "Ocean": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ocean"
+          }
+        }
+      }
+    },
+    "Odebrat vše": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove all"
+          }
+        }
+      }
+    },
+    "Odebrat ze známých": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove from known"
+          }
+        }
+      }
+    },
+    "Odemkne se na levelu %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlocks at level %lld"
+          }
+        }
+      }
+    },
+    "Odemčeno %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlocked %@"
+          }
+        }
+      }
+    },
+    "Odemčeno: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlocked: %@"
+          }
+        }
+      }
+    },
+    "Odměny": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rewards"
+          }
+        }
+      }
+    },
+    "Odpočet se spustí prvním stiskem. Esc ukončí bez uložení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The countdown starts with your first keystroke. Esc quits without saving."
+          }
+        }
+      }
+    },
+    "Odznak": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge"
+          }
+        }
+      }
+    },
+    "Odznak, který se ukáže při 10, 25, 50… správných znacích v řadě.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A badge that appears at 10, 25, 50… correct characters in a row."
+          }
+        }
+      }
+    },
+    "Odznaky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badges"
+          }
+        }
+      }
+    },
+    "Odřádkování se změní na mezery, typografické uvozovky a pomlčky na znaky z klávesnice.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Line breaks become spaces; typographic quotes and dashes become keyboard characters."
+          }
+        }
+      }
+    },
+    "Opis na čas se školním hodnocením: čisté úhozy, % chyb, známka.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timed copy test with school grading: net keystrokes, error %, grade."
+          }
+        }
+      }
+    },
+    "Opis na čas. Čisté úhozy, chybovost a známka jako ve škole.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timed copy test. Net keystrokes, error rate and a school grade."
+          }
+        }
+      }
+    },
+    "Opiš libovolný text – článek, poznámky nebo úkol do školy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy any text – an article, notes or homework."
+          }
+        }
+      }
+    },
+    "Opiš svůj text. Čas se spustí prvním stiskem, Esc ukončí bez uložení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copy your text. The timer starts with your first keystroke, Esc quits without saving."
+          }
+        }
+      }
+    },
+    "Opravdu smazat historii a statistiky?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Really delete history and statistics?"
+          }
+        }
+      }
+    },
+    "Opsáno %lld×": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copied %lld×"
+          }
+        }
+      }
+    },
+    "Orange": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orange"
+          }
+        }
+      }
+    },
+    "Osobní rekord": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personal record"
+          }
+        }
+      }
+    },
+    "Osobní rekordy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personal records"
+          }
+        }
+      }
+    },
+    "Ostré, krátké cvaknutí": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A sharp, short click"
+          }
+        }
+      }
+    },
+    "Otazník, vykřičník, dvojtečka, středník, závorky, uvozovky a lomítko.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question mark, exclamation mark, colon, semicolon, parentheses, quotes and slash."
+          }
+        }
+      }
+    },
+    "Otazník, vykřičník, dvojtečka, závorky, uvozovky a lomítko.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Question mark, exclamation mark, colon, parentheses, quotes and slash."
+          }
+        }
+      }
+    },
+    "Otevřu přehled písmen a označíš, co už umíš.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'll open the letter overview and you mark what you already know."
+          }
+        }
+      }
+    },
+    "PB": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PB"
+          }
+        }
+      }
+    },
+    "Palec": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thumb"
+          }
+        }
+      }
+    },
+    "Paper": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paper"
+          }
+        }
+      }
+    },
+    "Perfectionist": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perfectionist"
+          }
+        }
+      }
+    },
+    "Pink": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pink"
+          }
+        }
+      }
+    },
+    "Piš dnes celkem %lld minut": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type for %lld minutes in total today"
+          }
+        }
+      }
+    },
+    "Piš, dokud chceš. Bez cílové čáry.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type as long as you like. No finish line."
+          }
+        }
+      }
+    },
+    "Piš, jak dlouho chceš. Esc nebo Dokončit výsledek uloží.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type as long as you like. Esc or Finish saves the result."
+          }
+        }
+      }
+    },
+    "Plamen": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flame"
+          }
+        }
+      }
+    },
+    "Plný úhoz mechanické klávesnice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The full stroke of a mechanical keyboard"
+          }
+        }
+      }
+    },
+    "Plynulé psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluent typing"
+          }
+        }
+      }
+    },
+    "Podle macOS": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Follows macOS"
+          }
+        }
+      }
+    },
+    "Podle pokroku (úroveň %lld)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By progress (level %lld)"
+          }
+        }
+      }
+    },
+    "Podtržení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Underline"
+          }
+        }
+      }
+    },
+    "Pokrok, poslední cvičení a známá písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progress, recent exercise and known letters"
+          }
+        }
+      }
+    },
+    "Pomůže ti splnit dnešní výzvu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It will help you complete today's challenge."
+          }
+        }
+      }
+    },
+    "Poslední %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last %@"
+          }
+        }
+      }
+    },
+    "Poslední %@ bodů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last %@ points"
+          }
+        }
+      }
+    },
+    "Poslední %@ znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last %@ characters"
+          }
+        }
+      }
+    },
+    "Poslední %@ · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last %@ · %@"
+          }
+        }
+      }
+    },
+    "Poslední %@ čistých úh./min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last %@ net ks/min"
+          }
+        }
+      }
+    },
+    "Poslední cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last exercise"
+          }
+        }
+      }
+    },
+    "Poslední pokus nesplněn": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last attempt failed"
+          }
+        }
+      }
+    },
+    "Postupuješ na %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moving up to %@."
+          }
+        }
+      }
+    },
+    "Potřebujeme víc dat – stačí pár cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We need more data – a few exercises will do."
+          }
+        }
+      }
+    },
+    "Potřebuješ alespoň %lld písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You need at least %lld letters"
+          }
+        }
+      }
+    },
+    "Počítají se všechna dnešní cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All of today's exercises count."
+          }
+        }
+      }
+    },
+    "Počítá se čas psaní ve všech režimech.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing time in all modes counts."
+          }
+        }
+      }
+    },
+    "Practice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practice"
+          }
+        }
+      }
+    },
+    "Pravidelné tempo – přesně tak se píše všemi deseti.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steady rhythm – that's exactly how touch typing should feel."
+          }
+        }
+      }
+    },
+    "Problémové klávesy: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Problem keys: %@"
+          }
+        }
+      }
+    },
+    "Procvič slabší klávesy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practice your weak keys"
+          }
+        }
+      }
+    },
+    "Procvičit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Practice"
+          }
+        }
+      }
+    },
+    "Profesionální tempo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Professional pace"
+          }
+        }
+      }
+    },
+    "Prostředníček": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Middle finger"
+          }
+        }
+      }
+    },
+    "Prst začíná na klávese %@. Natáhni ho, zmáčkni a hned se vrať zpět.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your finger starts on the %@ key. Reach out, press, and come right back."
+          }
+        }
+      }
+    },
+    "Prst: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finger: %@"
+          }
+        }
+      }
+    },
+    "Prsteníček": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ring finger"
+          }
+        }
+      }
+    },
+    "Prsty sahají dolů pod základní řadu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fingers reach down below the home row."
+          }
+        }
+      }
+    },
+    "Prsty sahají nahoru a hned se vrací.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fingers reach up and come right back."
+          }
+        }
+      }
+    },
+    "Průměr posledních %lld: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average of last %lld: %@"
+          }
+        }
+      }
+    },
+    "Průměr · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average · %@"
+          }
+        }
+      }
+    },
+    "Průměrná přesnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average accuracy"
+          }
+        }
+      }
+    },
+    "Průměrná reakce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average reaction"
+          }
+        }
+      }
+    },
+    "Psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing"
+          }
+        }
+      }
+    },
+    "Purple": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purple"
+          }
+        }
+      }
+    },
+    "Pár minut stačí. Aplikace se ti hned začne přizpůsobovat.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A few minutes is enough. The app will start adapting to you right away."
+          }
+        }
+      }
+    },
+    "Písař": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scribe"
+          }
+        }
+      }
+    },
+    "Písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Letters"
+          }
+        }
+      }
+    },
+    "Píšeš přesně a svižně. Zkus mírný tlak na rychlost.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You type accurately and briskly. Try a little speed pressure."
+          }
+        }
+      }
+    },
+    "Přehled": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overview"
+          }
+        }
+      }
+    },
+    "Přehrát": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play"
+          }
+        }
+      }
+    },
+    "Přehrát ukázku": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Play sample"
+          }
+        }
+      }
+    },
+    "Přejít": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go"
+          }
+        }
+      }
+    },
+    "Přepnout na %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch to %@"
+          }
+        }
+      }
+    },
+    "Přeskočit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip"
+          }
+        }
+      }
+    },
+    "Přeskočit představení a začít psát": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip the introduction and start typing"
+          }
+        }
+      }
+    },
+    "Přesnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy"
+          }
+        }
+      }
+    },
+    "Přesnost je skvělá. Pro postup v textu zrychli na %lld WPM.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Great accuracy. To advance, speed up to %lld WPM."
+          }
+        }
+      }
+    },
+    "Přesnost klesla pod %lld %%. Trochu zpomalíme – %@: %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy dropped below %lld %%. Let's slow down a bit – %@: %@."
+          }
+        }
+      }
+    },
+    "Přesnost nad 95 %": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy over 95 %"
+          }
+        }
+      }
+    },
+    "Přesnost nad 98 %": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy over 98 %"
+          }
+        }
+      }
+    },
+    "Přesnost před rychlostí. Žádné zbytečné chyby.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy before speed. No needless mistakes."
+          }
+        }
+      }
+    },
+    "Přesnost v čase (%)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy over time (%)"
+          }
+        }
+      }
+    },
+    "Přesnost: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accuracy: %@"
+          }
+        }
+      }
+    },
+    "Při dalším cvičení se ti klávesa představí": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The key will be introduced in your next exercise"
+          }
+        }
+      }
+    },
+    "Při psaní přepneš variantu přes ⇧⌘F (Focus) nebo menu v horní liště.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "While typing, switch styles with ⇧⌘F (Focus) or the menu bar."
+          }
+        }
+      }
+    },
+    "Přidat": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add"
+          }
+        }
+      }
+    },
+    "Přidat %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add %@"
+          }
+        }
+      }
+    },
+    "Přidat další: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add next: %@"
+          }
+        }
+      }
+    },
+    "Přidat mezi známé": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add to known"
+          }
+        }
+      }
+    },
+    "Přidá další klávesu podle doporučeného pořadí výuky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adds the next key in the recommended learning order"
+          }
+        }
+      }
+    },
+    "Raw": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raw"
+          }
+        }
+      }
+    },
+    "Raw WPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raw WPM"
+          }
+        }
+      }
+    },
+    "Reakce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reaction"
+          }
+        }
+      }
+    },
+    "Red": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Red"
+          }
+        }
+      }
+    },
+    "Rekord": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record"
+          }
+        }
+      }
+    },
+    "Rekord vůči cíli": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record vs. goal"
+          }
+        }
+      }
+    },
+    "Rekord · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record · %@"
+          }
+        }
+      }
+    },
+    "Relaxed": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relaxed"
+          }
+        }
+      }
+    },
+    "Režim": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode"
+          }
+        }
+      }
+    },
+    "Režimy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modes"
+          }
+        }
+      }
+    },
+    "Rozložení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layout"
+          }
+        }
+      }
+    },
+    "Rozpis XP": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XP breakdown"
+          }
+        }
+      }
+    },
+    "Rozumím, jdeme psát": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Got it, let's type"
+          }
+        }
+      }
+    },
+    "Rychlopísař": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed Typist"
+          }
+        }
+      }
+    },
+    "Rychlost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed"
+          }
+        }
+      }
+    },
+    "Rychlost v posledních cvičeních": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed in recent exercises"
+          }
+        }
+      }
+    },
+    "Rychlost v čase (%@)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed over time (%@)"
+          }
+        }
+      }
+    },
+    "Rychlostní obtížnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed difficulty"
+          }
+        }
+      }
+    },
+    "Rychlé psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fast typing"
+          }
+        }
+      }
+    },
+    "Rytmus": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rhythm"
+          }
+        }
+      }
+    },
+    "S nimi už napíšeš spoustu slov.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With these you can already type lots of words."
+          }
+        }
+      }
+    },
+    "Sekce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Section"
+          }
+        }
+      }
+    },
+    "Sem vlož nebo napiš text…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste or type your text here…"
+          }
+        }
+      }
+    },
+    "Shift": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shift"
+          }
+        }
+      }
+    },
+    "Shift drž malíčkem ruky, která právě nepíše písmeno. Pro velké A tedy pravý Shift.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold Shift with the pinky of the hand that isn't typing the letter. So for a capital A, use the right Shift."
+          }
+        }
+      }
+    },
+    "Shift mačkej malíčkem opačné ruky.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Shift with the pinky of the opposite hand."
+          }
+        }
+      }
+    },
+    "Silent": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silent"
+          }
+        }
+      }
+    },
+    "Skvělá série!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Great streak!"
+          }
+        }
+      }
+    },
+    "Skóre": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score"
+          }
+        }
+      }
+    },
+    "Slova za minutu (WPM)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Words per minute (WPM)"
+          }
+        }
+      }
+    },
+    "Smazat": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        }
+      }
+    },
+    "Smazat historii a statistiky…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete history and statistics…"
+          }
+        }
+      }
+    },
+    "Smaže se historie, statistiky kláves, XP, série, rekordy i odznaky a úroveň se vrátí na 1. Známá písmena a nastavení zůstanou. Akci nelze vrátit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This deletes your history, key statistics, XP, streak, records and badges, and resets your level to 1. Known letters and settings stay. This can't be undone."
+          }
+        }
+      }
+    },
+    "Snížit rychlostní obtížnost?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lower the speed difficulty?"
+          }
+        }
+      }
+    },
+    "Soft": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soft"
+          }
+        }
+      }
+    },
+    "Soubor %@ obsahuje celý tvůj progres.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The file %@ contains all your progress."
+          }
+        }
+      }
+    },
+    "Soustřeď se hlavně na přesnost. Pro postup potřebuješ alespoň %lld %%.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Focus on accuracy first. You need at least %lld %% to advance."
+          }
+        }
+      }
+    },
+    "Současná písmena ti jdou dobře. Přidej %@ a pokračuj v osnově.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're doing well with your current letters. Add %@ and continue the course."
+          }
+        }
+      }
+    },
+    "Současná písmena ti jdou dobře. Přidej další klávesu z osnovy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You're doing well with your current letters. Add the next key from the course."
+          }
+        }
+      }
+    },
+    "Speedster": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speedster"
+          }
+        }
+      }
+    },
+    "Splnit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete"
+          }
+        }
+      }
+    },
+    "Splněno": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed"
+          }
+        }
+      }
+    },
+    "Splněno %lld× z %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Completed %lld× of %lld"
+          }
+        }
+      }
+    },
+    "Splň 10 denních výzev.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete 10 daily challenges."
+          }
+        }
+      }
+    },
+    "Splň dnešní výzvu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete today's challenge"
+          }
+        }
+      }
+    },
+    "Sprint": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sprint"
+          }
+        }
+      }
+    },
+    "Spustit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        }
+      }
+    },
+    "Start": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        }
+      }
+    },
+    "Start Practice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Practice"
+          }
+        }
+      }
+    },
+    "Statistiky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Statistics"
+          }
+        }
+      }
+    },
+    "Stisknutí": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presses"
+          }
+        }
+      }
+    },
+    "Střední": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medium"
+          }
+        }
+      }
+    },
+    "Survival": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survival"
+          }
+        }
+      }
+    },
+    "Survival · vlna %lld · %lld bodů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survival · wave %lld · %lld points"
+          }
+        }
+      }
+    },
+    "Survivor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survivor"
+          }
+        }
+      }
+    },
+    "System": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System"
+          }
+        }
+      }
+    },
+    "Série": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak"
+          }
+        }
+      }
+    },
+    "Série %lld znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak of %lld characters"
+          }
+        }
+      }
+    },
+    "Série k postupu %lld/2": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streak to level up %lld/2"
+          }
+        }
+      }
+    },
+    "Tato písmena budou v dalších cvičeních častěji.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These letters will show up more often in your next exercises."
+          }
+        }
+      }
+    },
+    "Tempo hodně kolísá – zpomal a drž stejné rozestupy mezi úhozy. Pomůže metronom (⇧⌘M).": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your pace varies a lot – slow down and keep even gaps between keystrokes. The metronome helps (⇧⌘M)."
+          }
+        }
+      }
+    },
+    "Tempo občas kolísá. Zkus zapnout metronom (⇧⌘M) a psát do rytmu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your pace varies now and then. Try the metronome (⇧⌘M) and type to the beat."
+          }
+        }
+      }
+    },
+    "Tenhle režim jsi ještě nezkusil.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You haven't tried this mode yet."
+          }
+        }
+      }
+    },
+    "Tenhle soubor není záloha Desetiprstky.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This file isn't a Desetiprstka backup."
+          }
+        }
+      }
+    },
+    "Tenhle znak je na Shiftu. Shift drž malíčkem druhé ruky, znak napiš prstem %@.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This character needs Shift. Hold Shift with the other hand's pinky and type the character with your %@."
+          }
+        }
+      }
+    },
+    "Teplé tóny": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warm tones"
+          }
+        }
+      }
+    },
+    "Test %@: čas běží od prvního stisku. Esc ukončí bez uložení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test %@: the timer starts with your first keystroke. Esc quits without saving."
+          }
+        }
+      }
+    },
+    "Test rychlosti": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed Test"
+          }
+        }
+      }
+    },
+    "Test rychlosti %lld s": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed Test %lld s"
+          }
+        }
+      }
+    },
+    "Test rychlosti %lld s · %@ správných znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speed Test %lld s · %@ correct characters"
+          }
+        }
+      }
+    },
+    "Text cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exercise text"
+          }
+        }
+      }
+    },
+    "Text je dlouhý – použije se prvních %@ znaků.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The text is long – the first %@ characters will be used."
+          }
+        }
+      }
+    },
+    "Text na čistém papíře": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text on clean paper"
+          }
+        }
+      }
+    },
+    "Text, metriky, klávesnice a ruce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, stats, keyboard and hands"
+          }
+        }
+      }
+    },
+    "Text, průběh, WPM a přesnost": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Text, progress, WPM and accuracy"
+          }
+        }
+      }
+    },
+    "Tečka, čárka a pomlčka.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Period, comma and hyphen."
+          }
+        }
+      }
+    },
+    "Tečka, čárka, apostrof a pomlčka.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Period, comma, apostrophe and hyphen."
+          }
+        }
+      }
+    },
+    "Tečkovaný": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dotted"
+          }
+        }
+      }
+    },
+    "Tiché tikání v cílovém tempu tvé rychlostní obtížnosti. Pomáhá psát rovnoměrně. Při psaní ho přepneš ⇧⌘M.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A quiet tick at the target pace of your speed difficulty. It helps you type evenly. Toggle it with ⇧⌘M while typing."
+          }
+        }
+      }
+    },
+    "Time Attack": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack"
+          }
+        }
+      }
+    },
+    "Time Attack %lld s": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack %lld s"
+          }
+        }
+      }
+    },
+    "Time Attack %lld s · %lld správných znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack %lld s · %lld correct characters"
+          }
+        }
+      }
+    },
+    "Time Attack 120 s": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack 120 s"
+          }
+        }
+      }
+    },
+    "Time Attack 15 s": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack 15 s"
+          }
+        }
+      }
+    },
+    "Time Attack 30 s": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack 30 s"
+          }
+        }
+      }
+    },
+    "Time Attack 60 s": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time Attack 60 s"
+          }
+        }
+      }
+    },
+    "Tlačítka, průběh, aktuální znak a důležité statistiky. Automatic = barva tématu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buttons, progress, the current character and key stats. Automatic = theme color."
+          }
+        }
+      }
+    },
+    "Tlumené, sotva slyšitelné ťuknutí": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A muted, barely audible tap"
+          }
+        }
+      }
+    },
+    "Tuto klávesu jsi zatím nepsal.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You haven't typed this key yet."
+          }
+        }
+      }
+    },
+    "Tvoje rychlost ve všech jednotkách": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your speed in every unit"
+          }
+        }
+      }
+    },
+    "Tvůj pokrok": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your progress"
+          }
+        }
+      }
+    },
+    "Tvůj text": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your text"
+          }
+        }
+      }
+    },
+    "Typ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type"
+          }
+        }
+      }
+    },
+    "Typewriter": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typewriter"
+          }
+        }
+      }
+    },
+    "Typewriter soft click, Hard typewriter click, Mechanical typewriter single hit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typewriter soft click, Hard typewriter click, Mechanical typewriter single hit"
+          }
+        }
+      }
+    },
+    "Typewriter.wav": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typewriter.wav"
+          }
+        }
+      }
+    },
+    "Typing on a mechanical keyboard": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing on a mechanical keyboard"
+          }
+        }
+      }
+    },
+    "Téma": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theme"
+          }
+        }
+      }
+    },
+    "Téma %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theme %@"
+          }
+        }
+      }
+    },
+    "Udrž 30denní sérii.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep a 30-day streak."
+          }
+        }
+      }
+    },
+    "Udrž 7denní sérii.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep a 7-day streak."
+          }
+        }
+      }
+    },
+    "Udrž si %llddenní sérii": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep your %lld-day streak"
+          }
+        }
+      }
+    },
+    "Ukazováček": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Index finger"
+          }
+        }
+      }
+    },
+    "Ukončit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit"
+          }
+        }
+      }
+    },
+    "Ukončit (Esc)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit (Esc)"
+          }
+        }
+      }
+    },
+    "Ukončit cvičení (Esc)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit exercise (Esc)"
+          }
+        }
+      }
+    },
+    "Unstoppable": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unstoppable"
+          }
+        }
+      }
+    },
+    "Upravit písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit letters"
+          }
+        }
+      }
+    },
+    "Upravit…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit…"
+          }
+        }
+      }
+    },
+    "Učeň": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprentice"
+          }
+        }
+      }
+    },
+    "V jednom cvičení (alespoň %lld znaků).": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In a single exercise (at least %lld characters)."
+          }
+        }
+      }
+    },
+    "V posledních cvičeních jsi cíl %lld WPM výrazně překonal při přesnosti nad 95 %%.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In your recent exercises you clearly beat the %lld WPM goal with accuracy over 95 %%."
+          }
+        }
+      }
+    },
+    "Velká písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capital Letters"
+          }
+        }
+      }
+    },
+    "Velká písmena s diakritikou (%@) napíšeš s Caps Lockem.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capital letters with accents (%@) are typed with Caps Lock."
+          }
+        }
+      }
+    },
+    "Velmistr": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grandmaster"
+          }
+        }
+      }
+    },
+    "Virtuos": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtuoso"
+          }
+        }
+      }
+    },
+    "Vladislav_Sazonov · Freesound · CC0": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vladislav_Sazonov · Freesound · CC0"
+          }
+        }
+      }
+    },
+    "Vlastní cílové WPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom target WPM"
+          }
+        }
+      }
+    },
+    "Vlastní nastavení…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom settings…"
+          }
+        }
+      }
+    },
+    "Vlastní text": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom Text"
+          }
+        }
+      }
+    },
+    "Vlastní text · %@ znaků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom text · %@ characters"
+          }
+        }
+      }
+    },
+    "Vlna %lld · min %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wave %lld · min %@"
+          }
+        }
+      }
+    },
+    "Vlož cokoliv – článek, poznámky, úkol do školy. Opíšeš ho a dostaneš stejné výsledky jako u cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste anything – an article, notes, homework. Copy it and get the same results as in practice."
+          }
+        }
+      }
+    },
+    "Vlož text a začni": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste a text and start"
+          }
+        }
+      }
+    },
+    "Vlož vlastní text a opiš ho – článek, poznámky, úkol.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste your own text and copy it – an article, notes, homework."
+          }
+        }
+      }
+    },
+    "Vložit ze schránky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste from clipboard"
+          }
+        }
+      }
+    },
+    "Vyberu si písmena sám": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'll pick the letters myself"
+          }
+        }
+      }
+    },
+    "Vybrat vše": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select all"
+          }
+        }
+      }
+    },
+    "Vymazat": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear"
+          }
+        }
+      }
+    },
+    "Vypnout metronom": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn metronome off"
+          }
+        }
+      }
+    },
+    "Vyzkoušej Time Attack": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try Time Attack"
+          }
+        }
+      }
+    },
+    "Vzhled": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
+          }
+        }
+      }
+    },
+    "Vzhled obrazovky psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing screen style"
+          }
+        }
+      }
+    },
+    "Vzhled obrazovky psaní · Focus ⇧⌘F": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing screen style · Focus ⇧⌘F"
+          }
+        }
+      }
+    },
+    "Vzhled psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Typing style"
+          }
+        }
+      }
+    },
+    "Vítej v Desetiprstce": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to Desetiprstka"
+          }
+        }
+      }
+    },
+    "Výborný výkon!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excellent performance!"
+          }
+        }
+      }
+    },
+    "Výborně": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excellent"
+          }
+        }
+      }
+    },
+    "Výborně!": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excellent!"
+          }
+        }
+      }
+    },
+    "Výchozí poloha prstů. Tady všechno začíná.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Where your fingers rest. This is where it all starts."
+          }
+        }
+      }
+    },
+    "Výzva": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge"
+          }
+        }
+      }
+    },
+    "Výzva dne": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily challenge"
+          }
+        }
+      }
+    },
+    "Výzva nesplněna": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge failed"
+          }
+        }
+      }
+    },
+    "Výzva splněna": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Challenge completed"
+          }
+        }
+      }
+    },
+    "Věty": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sentences"
+          }
+        }
+      }
+    },
+    "Vše se ukládá pouze lokálně v tomto Macu. Záloha je jeden soubor s celou historií, XP, rekordy, odznaky i nastavením. Ulož si ji třeba na iCloud Drive a obnovíš ji i na jiném Macu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everything is stored only on this Mac. A backup is one file with your whole history, XP, records, badges and settings. Save it to iCloud Drive, for example, and restore it on another Mac."
+          }
+        }
+      }
+    },
+    "Všechny klávesy": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All keys"
+          }
+        }
+      }
+    },
+    "Všechny režimy používají jen písmena, která umíš. Obtížnost textu mění jen Practice.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All modes use only the letters you know. Only Practice changes text difficulty."
+          }
+        }
+      }
+    },
+    "Vždy tmavé": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Always dark"
+          }
+        }
+      }
+    },
+    "WPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WPM"
+          }
+        }
+      }
+    },
+    "WPM včetně chybných stisků – rozdíl proti WPM ukazuje, kolik tě stojí chyby": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WPM including wrong keystrokes – the gap to WPM shows what mistakes cost you"
+          }
+        }
+      }
+    },
+    "WPM · CPM · KPM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WPM · CPM · KPM"
+          }
+        }
+      }
+    },
+    "Warm": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warm"
+          }
+        }
+      }
+    },
+    "XP": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XP"
+          }
+        }
+      }
+    },
+    "Z méně písmen se nedají sestavit cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can't build exercises from fewer letters."
+          }
+        }
+      }
+    },
+    "Za splnění získáš bonusové XP.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You'll earn bonus XP for completing it."
+          }
+        }
+      }
+    },
+    "Zapnout metronom": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn metronome on"
+          }
+        }
+      }
+    },
+    "Zatím bez pokusu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No attempts yet"
+          }
+        }
+      }
+    },
+    "Zatím nesplněno": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not completed yet"
+          }
+        }
+      }
+    },
+    "Zatím žádná data": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No data yet"
+          }
+        }
+      }
+    },
+    "Zatím žádné cvičení": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No exercises yet"
+          }
+        }
+      }
+    },
+    "Začneme klávesami F, J, D a K. Ke každé ti ukážu správný prst.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We'll start with the keys F, J, D and K. I'll show you the right finger for each."
+          }
+        }
+      }
+    },
+    "Začneš s klávesami A S D F G H J K L.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You'll start with the keys A S D F G H J K L."
+          }
+        }
+      }
+    },
+    "Začni prvním cvičením": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start with your first exercise"
+          }
+        }
+      }
+    },
+    "Začni psát – čas se spustí prvním stiskem. Esc ukončí cvičení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start typing – the timer starts with your first keystroke. Esc ends the exercise."
+          }
+        }
+      }
+    },
+    "Začít": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        }
+      }
+    },
+    "Začít hned (⏎ nebo ⌘N)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start now (⏎ or ⌘N)"
+          }
+        }
+      }
+    },
+    "Začít opis": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start typing"
+          }
+        }
+      }
+    },
+    "Zbytek české diakritiky.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The rest of the Czech accents."
+          }
+        }
+      }
+    },
+    "Zbývající písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remaining Letters"
+          }
+        }
+      }
+    },
+    "Zbývá": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Left"
+          }
+        }
+      }
+    },
+    "Zbývá chyb": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mistakes left"
+          }
+        }
+      }
+    },
+    "Zdroje zvuků": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound sources"
+          }
+        }
+      }
+    },
+    "Zkouška": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exam"
+          }
+        }
+      }
+    },
+    "Zkouška %@: čas běží od prvního stisku. Chyba = −100 úhozů. Esc ukončí bez uložení.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exam %@: the timer starts with your first keystroke. Each mistake = −100 keystrokes. Esc quits without saving."
+          }
+        }
+      }
+    },
+    "Zkouška %lld min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exam %lld min"
+          }
+        }
+      }
+    },
+    "Zkouška %lld min · %@ hrubých úhozů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exam %lld min · %@ gross keystrokes"
+          }
+        }
+      }
+    },
+    "Zkus %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try %@"
+          }
+        }
+      }
+    },
+    "Zkus %@ %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try %@ %@"
+          }
+        }
+      }
+    },
+    "Zkus klidnější tempo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try a calmer pace"
+          }
+        }
+      }
+    },
+    "Zkus to znovu: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again: %@"
+          }
+        }
+      }
+    },
+    "Zkus trochu zpomalit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try slowing down a little"
+          }
+        }
+      }
+    },
+    "Zkus vyšší tempo": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try a faster pace"
+          }
+        }
+      }
+    },
+    "Změna se projeví okamžitě. Midnight je vždy tmavé, ostatní se řídí systémem.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changes apply instantly. Midnight is always dark; the others follow the system."
+          }
+        }
+      }
+    },
+    "Změnit text…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change text…"
+          }
+        }
+      }
+    },
+    "Znaky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Characters"
+          }
+        }
+      }
+    },
+    "Znaky za minutu (CPM)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Characters per minute (CPM)"
+          }
+        }
+      }
+    },
+    "Znovu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Again"
+          }
+        }
+      }
+    },
+    "Znám základní řadu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I know the home row"
+          }
+        }
+      }
+    },
+    "Známka": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grade"
+          }
+        }
+      }
+    },
+    "Známka je orientační (1: 250+ čistých úh./min a do 0,3 % chyb, 2: 200+ a 0,5 %, 3: 150+ a 1 %, 4: 100+ a 2 %). Školy mají vlastní tabulky podle ročníku.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The grade is approximate, based on Czech school standards (1: 250+ net ks/min with up to 0.3 % errors, 2: 200+ and 0.5 %, 3: 150+ and 1 %, 4: 100+ and 2 %). Schools use their own tables."
+          }
+        }
+      }
+    },
+    "Známá písmena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Known letters"
+          }
+        }
+      }
+    },
+    "Zobrazit klávesnici (⇧⌘K)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show keyboard (⇧⌘K)"
+          }
+        }
+      }
+    },
+    "Zobrazit ruce (⇧⌘H)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show hands (⇧⌘H)"
+          }
+        }
+      }
+    },
+    "Zobrazit statistiku klávesy %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show statistics for key %@"
+          }
+        }
+      }
+    },
+    "Zobrazovat klávesnici při psaní": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show keyboard while typing"
+          }
+        }
+      }
+    },
+    "Zobrazovat ruce a prsty": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show hands and fingers"
+          }
+        }
+      }
+    },
+    "Zopakovat stejný text": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repeat the same text"
+          }
+        }
+      }
+    },
+    "Zručný písař": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skilled Scribe"
+          }
+        }
+      }
+    },
+    "Zrušit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Zvuk": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound"
+          }
+        }
+      }
+    },
+    "Zvuk při chybě": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error sound"
+          }
+        }
+      }
+    },
+    "Zvuk zazní jen u správně napsaného znaku. Přehrává se mimo hlavní vlákno, psaní nezdrží.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sound plays only for correctly typed characters. It runs off the main thread, so typing never lags."
+          }
+        }
+      }
+    },
+    "Zvuky %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sounds %@"
+          }
+        }
+      }
+    },
+    "Zvuky odměn": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reward sounds"
+          }
+        }
+      }
+    },
+    "Zvuky úhozů": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keystroke sounds"
+          }
+        }
+      }
+    },
+    "Zvýraznění": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Highlight"
+          }
+        }
+      }
+    },
+    "Zvýšit rychlostní obtížnost?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raise the speed difficulty?"
+          }
+        }
+      }
+    },
+    "Základní řada": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home Row"
+          }
+        }
+      }
+    },
+    "Záloha je poškozená nebo byla upravena, proto ji nejde obnovit.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The backup is damaged or has been edited, so it can't be restored."
+          }
+        }
+      }
+    },
+    "Záloha pochází z novější verze Desetiprstky (formát %lld). Aktualizuj aplikaci a zkus to znovu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This backup comes from a newer version of Desetiprstka (format %lld). Update the app and try again."
+          }
+        }
+      }
+    },
+    "Záloha progresu": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progress backup"
+          }
+        }
+      }
+    },
+    "Záloha uložena": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup saved"
+          }
+        }
+      }
+    },
+    "Záloha z %@: %lld cvičení, level %lld, %lld odznaků.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup from %@: %lld exercises, level %lld, %lld badges."
+          }
+        }
+      }
+    },
+    "Zálohovat…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back Up…"
+          }
+        }
+      }
+    },
+    "Zálohu se nepodařilo načíst": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load the backup"
+          }
+        }
+      }
+    },
+    "Zálohu se nepodařilo uložit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't save the backup"
+          }
+        }
+      }
+    },
+    "Zálohu se nepodařilo vytvořit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't create the backup"
+          }
+        }
+      }
+    },
+    "Získej 500 bodů v režimu Survival.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score 500 points in Survival mode."
+          }
+        }
+      }
+    },
+    "asi %lld min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "about %lld min"
+          }
+        }
+      }
+    },
+    "až +%lld XP": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "up to +%lld XP"
+          }
+        }
+      }
+    },
+    "bez chyby": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "no mistakes"
+          }
+        }
+      }
+    },
+    "chybovost pod %@ %%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "error rate below %@ %%"
+          }
+        }
+      }
+    },
+    "cíl %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "goal %@"
+          }
+        }
+      }
+    },
+    "ddohler · Freesound · CC BY 4.0 · upraveno (oříznutí, hlasitost, výška)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ddohler · Freesound · CC BY 4.0 · edited (trim, volume, pitch)"
+          }
+        }
+      }
+    },
+    "dobr": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "hell"
+          }
+        }
+      }
+    },
+    "malíček levé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "left pinky"
+          }
+        }
+      }
+    },
+    "malíček pravé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "right pinky"
+          }
+        }
+      }
+    },
+    "mezerník": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "space"
+          }
+        }
+      }
+    },
+    "mezerníku": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "the space bar"
+          }
+        }
+      }
+    },
+    "min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "min"
+          }
+        }
+      }
+    },
+    "palec": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "thumb"
+          }
+        }
+      }
+    },
+    "pod 80 %": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "below 80 %"
+          }
+        }
+      }
+    },
+    "procvičujeme %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "practicing %@"
+          }
+        }
+      }
+    },
+    "prostředníček levé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "left middle finger"
+          }
+        }
+      }
+    },
+    "prostředníček pravé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "right middle finger"
+          }
+        }
+      }
+    },
+    "prsteníček levé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "left ring finger"
+          }
+        }
+      }
+    },
+    "prsteníček pravé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "right ring finger"
+          }
+        }
+      }
+    },
+    "ukazováček levé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "left index finger"
+          }
+        }
+      }
+    },
+    "ukazováček pravé ruky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "right index finger"
+          }
+        }
+      }
+    },
+    "Úhoz": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keystroke"
+          }
+        }
+      }
+    },
+    "Úhozy za minutu (KPM)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keystrokes per minute (KPM)"
+          }
+        }
+      }
+    },
+    "Úroveň": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level"
+          }
+        }
+      }
+    },
+    "Úroveň %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld"
+          }
+        }
+      }
+    },
+    "Úroveň %lld · %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Level %lld · %@"
+          }
+        }
+      }
+    },
+    "úh./min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ks/min"
+          }
+        }
+      }
+    },
+    "úroveň %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "level %lld"
+          }
+        }
+      }
+    },
+    "ý": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "o"
+          }
+        }
+      }
+    },
+    "Čas": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time"
+          }
+        }
+      }
+    },
+    "Častěji chybuješ u: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You often miss: %@"
+          }
+        }
+      }
+    },
+    "Česká – QWERTY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech – QWERTY"
+          }
+        }
+      }
+    },
+    "Česká – QWERTZ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech – QWERTZ"
+          }
+        }
+      }
+    },
+    "České a slovenské školy, ZAV, státní zkoušky": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech and Slovak schools, state exams"
+          }
+        }
+      }
+    },
+    "Čisté úhozy/min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Net keystrokes/min"
+          }
+        }
+      }
+    },
+    "Čárky a háčky I": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech Accents I"
+          }
+        }
+      }
+    },
+    "Čárky a háčky II": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czech Accents II"
+          }
+        }
+      }
+    },
+    "Číselná řada nad písmeny – bez Shiftu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The number row above the letters – no Shift needed."
+          }
+        }
+      }
+    },
+    "Číselná řada – nejčastější diakritika.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Number row – the most common accents."
+          }
+        }
+      }
+    },
+    "Číslice": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numbers"
+          }
+        }
+      }
+    },
+    "Číslice jsou v horní řadě nad písmeny. %@ natáhni nahoru, zmáčkni a hned se vrať na základní řadu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numbers are in the top row above the letters. Stretch your %@ up, press, and return to the home row."
+          }
+        }
+      }
+    },
+    "Číslice jsou v horní řadě nad písmeny. Drž Shift malíčkem druhé ruky a %@ natáhni nahoru – pak se hned vrať na základní řadu.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numbers are in the top row above the letters. Hold Shift with the other hand's pinky, stretch your %@ up, then go straight back to the home row."
+          }
+        }
+      }
+    },
+    "Žádná historie": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No history"
+          }
+        }
+      }
+    },
+    "—": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "—"
+          }
+        }
+      }
+    },
+    "🏆 New Personal Best": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "🏆 New Personal Best"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

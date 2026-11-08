@@ -18,6 +18,8 @@ xcodebuild -project Desetiprstka.xcodeproj -target Desetiprstka -configuration D
   SYMROOT="$PWD/.build" build >> "$LOG" 2>&1
 STATUS=$?
 echo "EXIT $STATUS" >> "$LOG"
+# Volitelný lokální hook (např. přepnutí jazyka pro test), není v gitu.
+[ -x .hooks.sh ] && ./.hooks.sh >> "$LOG" 2>&1
 if [ $STATUS -eq 0 ] && [ -f .run-after-build ]; then
   open "$PWD/.build/Debug/Desetiprstka.app"
   echo "LAUNCHED" >> "$LOG"

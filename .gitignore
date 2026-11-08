@@ -24,3 +24,4 @@ watcher.command
 # Tajný klíč pro šifrování záloh – nikdy do gitu
 Desetiprstka/Resources/backupkey.dat
 pull.log
+.hooks.sh
