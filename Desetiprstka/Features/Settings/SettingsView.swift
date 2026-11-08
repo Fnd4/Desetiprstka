@@ -24,6 +24,7 @@ private struct GeneralSettingsTab: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \PlayerProgress.createdAt) private var progresses: [PlayerProgress]
     @AppStorage(SettingsKey.keyboardLayout) private var layoutKind: KeyboardLayoutKind = .czechQWERTZ
+    @AppStorage(SettingsKey.practiceLanguage) private var practiceLanguage: PracticeLanguage = .czech
     @AppStorage(SettingsKey.exerciseLength) private var exerciseLength: ExerciseLength = .medium
     @AppStorage(SettingsKey.showsKeyboard) private var showsKeyboard = true
     @AppStorage(SettingsKey.showsHands) private var showsHands = true
@@ -66,17 +67,22 @@ private struct GeneralSettingsTab: View {
             }
 
             Section {
+                Picker("Jazyk cvičení", selection: $practiceLanguage) {
+                    ForEach(PracticeLanguage.allCases) { language in
+                        Text("\(language.flag) \(language.nativeName)").tag(language)
+                    }
+                }
                 Picker("Rozložení", selection: $layoutKind) {
-                    ForEach(KeyboardLayoutKind.allCases) { kind in
+                    ForEach(practiceLanguage.layouts) { kind in
                         Text(kind.title).tag(kind)
                     }
                 }
                 Toggle("Zobrazovat klávesnici při psaní", isOn: $showsKeyboard)
                 Toggle("Zobrazovat ruce a prsty", isOn: $showsHands)
             } header: {
-                Text("Klávesnice")
+                Text("Jazyk a klávesnice")
             } footer: {
-                Text("Rozložení musí odpovídat zdroji vstupu v Nastavení systému → Klávesnice.")
+                Text("Jazyk cvičení určuje slova a věty, rozhraní appky se řídí jazykem macOS. Rozložení musí odpovídat zdroji vstupu v Nastavení systému → Klávesnice.")
                     .foregroundStyle(.secondary)
             }
 
@@ -137,6 +143,9 @@ private struct GeneralSettingsTab: View {
         }
         .alert(item: $backupMessage) { message in
             Alert(title: Text(message.title), message: Text(message.text))
+        }
+        .onChange(of: practiceLanguage) { _, language in
+            if !language.layouts.contains(layoutKind) { layoutKind = language.defaultLayout }
         }
         .task { store.playerProgress() }
     }

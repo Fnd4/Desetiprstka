@@ -8,6 +8,7 @@ struct DesetiprstkaApp: App {
     private let container = Persistence.makeContainer()
 
     init() {
+        PracticeLanguage.registerDefaults()
         // Zvuky se vygenerují na pozadí hned při startu → první úhoz už nic nečeká.
         AudioManager.shared.prepare()
     }

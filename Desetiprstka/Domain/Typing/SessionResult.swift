@@ -96,6 +96,8 @@ enum TypingMetrics {
     /// Velká písmena, číslice a znaky na Shiftu = 2, mrtvé klávesy (ó, ď, ť, ň) = 2–3.
     static func strokeCost(_ character: Character) -> Int {
         if character == " " { return 1 }
+        // Znak, který zvolené rozložení zná: tolik úhozů, kolik kláves (písmeno, Shift).
+        if let stroke = KeyboardLayoutKind.current.layout.stroke(for: character) { return stroke.keys.count }
         if let cost = deadKeyCosts[character] { return cost }
         if let lower = character.lowercased().first, lower != character, let cost = deadKeyCosts[lower] {
             return cost + 1

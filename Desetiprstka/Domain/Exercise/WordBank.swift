@@ -16,6 +16,11 @@ struct WordBank: Sendable {
         self.sentences = sentences.map { $0.precomposedStringWithCanonicalMapping }
     }
 
+    /// Slovník pro jazyk cvičení z Nastavení.
+    static var current: WordBank { PracticeLanguage.current.wordBank }
+
+    static let english = WordBank(words: EnglishWords.words, sentences: EnglishWords.sentences)
+
     static let czech = WordBank(
         words: CzechWords.all + CzechWordsExtended.words,
         sentences: CzechWords.sentences + CzechWordsExtended.sentences

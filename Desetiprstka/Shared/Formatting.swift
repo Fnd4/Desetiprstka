@@ -8,7 +8,7 @@ enum Format {
 
     /// Desetinné číslo s českou čárkou (0,25).
     static func decimal(_ value: Double, digits: Int = 2) -> String {
-        value.formatted(.number.precision(.fractionLength(0...digits)).locale(Locale(identifier: "cs_CZ")))
+        value.formatted(.number.precision(.fractionLength(0...digits)).locale(.autoupdatingCurrent))
     }
 
     static func percent(_ value: Double) -> String {
@@ -28,11 +28,11 @@ enum Format {
 
     /// Celé číslo s oddělovači tisíců (10 000).
     static func number(_ value: Double) -> String {
-        Int(value.rounded()).formatted(.number.locale(Locale(identifier: "cs_CZ")))
+        Int(value.rounded()).formatted(.number.locale(.autoupdatingCurrent))
     }
 
     static func number(_ value: Int) -> String {
-        value.formatted(.number.locale(Locale(identifier: "cs_CZ")))
+        value.formatted(.number.locale(.autoupdatingCurrent))
     }
 
     /// Reakční doba v milisekundách.

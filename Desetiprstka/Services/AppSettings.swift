@@ -3,6 +3,7 @@ import Foundation
 /// Klíče pro `@AppStorage` – uživatelské předvolby (ne progres).
 enum SettingsKey {
     static let keyboardLayout = "settings.keyboardLayout"
+    static let practiceLanguage = "settings.practiceLanguage"
     static let exerciseLength = "settings.exerciseLength"
     static let showsKeyboard = "settings.showsKeyboard"
     static let showsHands = "settings.showsHands"

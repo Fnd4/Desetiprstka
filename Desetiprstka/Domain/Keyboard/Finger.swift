@@ -66,7 +66,7 @@ enum Finger: Int, CaseIterable, Identifiable, Codable, Sendable {
         case .rightIndex: "J"
         case .rightMiddle: "K"
         case .rightRing: "L"
-        case .rightPinky: "Ů"
+        case .rightPinky: KeyboardLayoutKind.current.isCzech ? "Ů" : ";"
         }
     }
 

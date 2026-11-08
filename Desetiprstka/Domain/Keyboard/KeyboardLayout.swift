@@ -4,21 +4,39 @@ import CoreGraphics
 enum KeyboardLayoutKind: String, CaseIterable, Identifiable, Codable, Sendable {
     case czechQWERTZ
     case czechQWERTY
+    case usQWERTY
+    case ukQWERTY
 
     var id: String { rawValue }
 
     var title: String {
         switch self {
-        case .czechQWERTZ: "Česká – QWERTZ"
-        case .czechQWERTY: "Česká – QWERTY"
+        case .czechQWERTZ: String(localized: "Česká – QWERTZ")
+        case .czechQWERTY: String(localized: "Česká – QWERTY")
+        case .usQWERTY: String(localized: "Anglická (USA) – QWERTY")
+        case .ukQWERTY: String(localized: "Anglická (Británie) – QWERTY")
         }
     }
+
+    var isCzech: Bool { self == .czechQWERTZ || self == .czechQWERTY }
 
     var layout: KeyboardLayout {
         switch self {
         case .czechQWERTZ: KeyboardLayout.czechQWERTZ
         case .czechQWERTY: KeyboardLayout.czechQWERTY
+        case .usQWERTY: KeyboardLayout.usQWERTY
+        case .ukQWERTY: KeyboardLayout.ukQWERTY
         }
+    }
+
+    /// Rozložení zvolené v Nastavení (platné pro aktuální jazyk cvičení).
+    static var current: KeyboardLayoutKind {
+        let language = PracticeLanguage.current
+        if let raw = UserDefaults.standard.string(forKey: SettingsKey.keyboardLayout),
+           let kind = KeyboardLayoutKind(rawValue: raw), language.layouts.contains(kind) {
+            return kind
+        }
+        return language.defaultLayout
     }
 }
 
@@ -73,11 +91,13 @@ struct KeyStroke: Equatable, Sendable {
     var usesShift: Bool { keys.contains { $0.kind == .leftShift || $0.kind == .rightShift } }
 }
 
-/// Model klávesnice Macu (ISO) s českým rozložením.
+/// Model klávesnice Macu – české a britské rozložení jsou ISO, americké ANSI.
 struct KeyboardLayout: Sendable {
     static let rowUnits: CGFloat = 15
     static let czechQWERTZ = KeyboardLayout(kind: .czechQWERTZ)
     static let czechQWERTY = KeyboardLayout(kind: .czechQWERTY)
+    static let usQWERTY = KeyboardLayout(kind: .usQWERTY)
+    static let ukQWERTY = KeyboardLayout(kind: .ukQWERTY)
 
     let kind: KeyboardLayoutKind
     let rows: [[KeyboardKey]]
@@ -150,6 +170,103 @@ struct KeyboardLayout: Sendable {
     // MARK: - Definice řad
 
     private static func buildRows(for kind: KeyboardLayoutKind) -> [[KeyboardKey]] {
+        switch kind {
+        case .czechQWERTZ, .czechQWERTY: czechRows(for: kind)
+        case .usQWERTY, .ukQWERTY: englishRows(iso: kind == .ukQWERTY)
+        }
+    }
+
+    /// Anglické rozložení Macu. US = ANSI, UK = ISO (klávesa § vlevo nahoře, ` u levého Shiftu).
+    private static func englishRows(iso: Bool) -> [[KeyboardKey]] {
+        let numberRow: [KeyboardKey] = [
+            iso ? decoration("section", "§", width: 1) : key("`", .leftPinky, secondary: "~"),
+            key("1", .leftPinky, secondary: "!"),
+            key("2", .leftRing, secondary: "@"),
+            key("3", .leftMiddle, secondary: iso ? "£" : "#"),
+            key("4", .leftIndex, secondary: "$"),
+            key("5", .leftIndex, secondary: "%"),
+            key("6", .rightIndex, secondary: "^"),
+            key("7", .rightIndex, secondary: "&"),
+            key("8", .rightMiddle, secondary: "*"),
+            key("9", .rightRing, secondary: "("),
+            key("0", .rightPinky, secondary: ")"),
+            key("-", .rightPinky, secondary: "_"),
+            key("=", .rightPinky, secondary: "+"),
+            decoration("delete", "⌫", width: 2),
+        ]
+
+        var topRow: [KeyboardKey] = [
+            decoration("tab", "⇥", width: 1.5),
+            key("q", .leftPinky),
+            key("w", .leftRing),
+            key("e", .leftMiddle),
+            key("r", .leftIndex),
+            key("t", .leftIndex),
+            key("y", .rightIndex),
+            key("u", .rightIndex),
+            key("i", .rightMiddle),
+            key("o", .rightRing),
+            key("p", .rightPinky),
+            key("[", .rightPinky, secondary: "{"),
+            key("]", .rightPinky, secondary: "}"),
+        ]
+        topRow.append(iso ? decoration("return-top", "", width: 1.5) : key("\\", .rightPinky, secondary: "|", width: 1.5))
+
+        var homeRow: [KeyboardKey] = [
+            decoration("caps", "⇪", width: 1.75),
+            key("a", .leftPinky),
+            key("s", .leftRing),
+            key("d", .leftMiddle),
+            key("f", .leftIndex),
+            key("g", .leftIndex),
+            key("h", .rightIndex),
+            key("j", .rightIndex),
+            key("k", .rightMiddle),
+            key("l", .rightRing),
+            key(";", .rightPinky, secondary: ":"),
+            key("'", .rightPinky, secondary: "\""),
+        ]
+        if iso { homeRow.append(key("\\", .rightPinky, secondary: "|")) }
+        homeRow.append(decoration("return", "↩", width: iso ? 1.25 : 2.25))
+
+        var bottomRow: [KeyboardKey] = [
+            KeyboardKey(id: "shift-left", kind: .leftShift, character: nil, secondary: nil,
+                        label: "⇧", finger: .leftPinky, width: iso ? 1.25 : 2.25),
+        ]
+        if iso { bottomRow.append(key("`", .leftPinky, secondary: "~")) }
+        bottomRow += [
+            key("z", .leftPinky),
+            key("x", .leftRing),
+            key("c", .leftMiddle),
+            key("v", .leftIndex),
+            key("b", .leftIndex),
+            key("n", .rightIndex),
+            key("m", .rightIndex),
+            key(",", .rightMiddle, secondary: "<"),
+            key(".", .rightRing, secondary: ">"),
+            key("/", .rightPinky, secondary: "?"),
+            KeyboardKey(id: "shift-right", kind: .rightShift, character: nil, secondary: nil,
+                        label: "⇧", finger: .rightPinky, width: 2.75),
+        ]
+
+        return [numberRow, topRow, homeRow, bottomRow, spaceRow()]
+    }
+
+    private static func spaceRow() -> [KeyboardKey] {
+        [
+            decoration("fn", "fn", width: 1),
+            decoration("control", "⌃", width: 1),
+            decoration("option-left", "⌥", width: 1),
+            decoration("command-left", "⌘", width: 1.25),
+            KeyboardKey(id: "space", kind: .space, character: " ", secondary: nil,
+                        label: "", finger: .thumbs, width: 5.5),
+            decoration("command-right", "⌘", width: 1.25),
+            decoration("option-right", "⌥", width: 1),
+            decoration("arrows", "", width: 3),
+        ]
+    }
+
+    private static func czechRows(for kind: KeyboardLayoutKind) -> [[KeyboardKey]] {
         let topRowZ: Character = kind == .czechQWERTZ ? "z" : "y"
         let bottomRowY: Character = kind == .czechQWERTZ ? "y" : "z"
 
@@ -221,22 +338,10 @@ struct KeyboardLayout: Sendable {
                         label: "⇧", finger: .rightPinky, width: 2.75),
         ]
 
-        let spaceRow: [KeyboardKey] = [
-            decoration("fn", "fn", width: 1),
-            decoration("control", "⌃", width: 1),
-            decoration("option-left", "⌥", width: 1),
-            decoration("command-left", "⌘", width: 1.25),
-            KeyboardKey(id: "space", kind: .space, character: " ", secondary: nil,
-                        label: "", finger: .thumbs, width: 5.5),
-            decoration("command-right", "⌘", width: 1.25),
-            decoration("option-right", "⌥", width: 1),
-            decoration("arrows", "", width: 3),
-        ]
-
-        return [numberRow, topRow, homeRow, bottomRow, spaceRow]
+        return [numberRow, topRow, homeRow, bottomRow, spaceRow()]
     }
 
-    private static func key(_ character: Character, _ finger: Finger, secondary: String? = nil) -> KeyboardKey {
+    private static func key(_ character: Character, _ finger: Finger, secondary: String? = nil, width: CGFloat = 1) -> KeyboardKey {
         KeyboardKey(
             id: "key-\(character)",
             kind: .character,
@@ -244,7 +349,7 @@ struct KeyboardLayout: Sendable {
             secondary: secondary,
             label: String(character).uppercased(),
             finger: finger,
-            width: 1
+            width: width
         )
     }
 

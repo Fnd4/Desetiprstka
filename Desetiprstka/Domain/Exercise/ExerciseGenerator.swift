@@ -6,7 +6,7 @@ import Foundation
 /// Pokud slovník nemá dost skutečných slov, generátor doplní
 /// vyslovitelná „pseudo-slova“ ze známých písmen.
 struct ExerciseGenerator {
-    var wordBank: WordBank = .czech
+    var wordBank: WordBank = .current
 
     func makeExercise(
         knownKeys: Set<String>,
