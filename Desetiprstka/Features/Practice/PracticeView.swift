@@ -407,7 +407,9 @@ struct PracticeView: View {
         guard let expected = engine.expected else { return "" }
         var text = "\(displayName(for: expected)) – \(stroke.primary.finger.name)"
         if let shift = stroke.keys.first(where: { $0.kind == .leftShift || $0.kind == .rightShift }) {
-            text += String(localized: " + \(shift.kind == .leftShift ? "levý" : "pravý") Shift (\(shift.finger.name))")
+            text += (shift.kind == .leftShift
+                ? String(localized: " + levý Shift (\(shift.finger.name))")
+                : String(localized: " + pravý Shift (\(shift.finger.name))"))
         }
         return text
     }

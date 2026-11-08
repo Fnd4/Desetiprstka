@@ -70,10 +70,13 @@ enum PracticeLanguage: String, CaseIterable, Identifiable, Sendable {
         if defaults.object(forKey: SettingsKey.practiceLanguage) == nil, usedBefore {
             defaults.set(PracticeLanguage.czech.rawValue, forKey: SettingsKey.practiceLanguage)
         }
-        let language = systemDefault
-        defaults.register(defaults: [
-            SettingsKey.practiceLanguage: language.rawValue,
-            SettingsKey.keyboardLayout: language.defaultLayout.rawValue,
-        ])
+        defaults.register(defaults: [SettingsKey.practiceLanguage: systemDefault.rawValue])
+        // Rozložení musí patřit k jazyku cvičení, jinak by ho Nastavení neukázalo.
+        let language = PracticeLanguage.current
+        defaults.register(defaults: [SettingsKey.keyboardLayout: language.defaultLayout.rawValue])
+        if let raw = defaults.string(forKey: SettingsKey.keyboardLayout),
+           let kind = KeyboardLayoutKind(rawValue: raw), !language.layouts.contains(kind) {
+            defaults.set(language.defaultLayout.rawValue, forKey: SettingsKey.keyboardLayout)
+        }
     }
 }

@@ -131,7 +131,7 @@ struct HomeView: View {
                     .foregroundStyle(.secondary)
                 Label(difficulty.stage.title, systemImage: difficulty.stage.symbol)
                     .font(.system(size: 30, weight: .bold, design: .rounded))
-                Text(verbatim: "\(difficulty.title) z \(Difficulty.maxLevel) · rychlost \(speed.label)")
+                Text("\(difficulty.title) z \(Difficulty.maxLevel) · rychlost \(speed.label)")
                     .foregroundStyle(.secondary)
             }
 

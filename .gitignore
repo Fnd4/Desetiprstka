@@ -25,3 +25,4 @@ watcher.command
 Desetiprstka/Resources/backupkey.dat
 pull.log
 .hooks.sh
+.lang-en

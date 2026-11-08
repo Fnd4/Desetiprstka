@@ -441,7 +441,7 @@ enum ModeInsightsBuilder {
         if let insight, insight.personalBest != nil {
             goal = String(localized: "Cíl: překonat \(insight.personalBest ?? "") → \(insight.goal.target)")
         } else {
-            goal = String(localized: "Cíl: \(insight?.goal.target ?? "dokončit")")
+            goal = String(localized: "Cíl: \(insight?.goal.target ?? String(localized: "dokončit"))")
         }
         return ModeRecommendation(
             mode: mode,
