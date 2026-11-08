@@ -12,13 +12,24 @@
         }
       }
     },
-    " + %@ Shift (%@)": {
+    " + levý Shift (%@)": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": " + %@ Shift (%@)"
+            "value": " + left Shift (%@)"
+          }
+        }
+      }
+    },
+    " + pravý Shift (%@)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": " + right Shift (%@)"
           }
         }
       }
@@ -118,6 +129,17 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ at level %lld"
+          }
+        }
+      }
+    },
+    "%@ z %lld · rychlost %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ of %lld · speed %@"
           }
         }
       }
@@ -6718,6 +6740,17 @@
           "stringUnit": {
             "state": "translated",
             "value": "hell"
+          }
+        }
+      }
+    },
+    "dokončit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "finish"
           }
         }
       }
